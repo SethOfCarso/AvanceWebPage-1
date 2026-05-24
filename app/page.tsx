@@ -1,26 +1,33 @@
-import { CaseStudySection } from "@/components/case-study-section";
-import { FinalCtaSection } from "@/components/final-cta-section";
 import { Header, Hero } from "@/components/hero";
-import { PricingSection } from "@/components/pricing-section";
-import { ProcessSection } from "@/components/process-section";
-import { SiteEffects } from "@/components/site-effects";
-import { SolutionsSection } from "@/components/solutions-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
-import { TrustSection } from "@/components/trust-section";
+
+const services = [
+  "Estudios socioeconomicos",
+  "Verificacion domiciliaria",
+  "Historial laboral",
+  "Referencias personales",
+];
 
 export default function Home() {
   return (
     <>
-      <SiteEffects />
       <Header />
-      <Hero />
-      <TrustSection />
-      <SolutionsSection />
-      <CaseStudySection />
-      <ProcessSection />
-      <TestimonialsSection />
-      <PricingSection />
-      <FinalCtaSection />
+      <main>
+        <Hero />
+        <section className="quick-section" id="soluciones" aria-label="Soluciones">
+          <div>
+            <p className="section-kicker">Soluciones</p>
+            <h2>Informacion clara para contratar con confianza.</h2>
+          </div>
+          <div className="service-list">
+            {services.map((service) => (
+              <article key={service}>
+                <span />
+                <p>{service}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </main>
     </>
   );
 }
