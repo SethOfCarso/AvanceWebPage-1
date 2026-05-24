@@ -12,7 +12,7 @@ import {
 const navItems = ["Soluciones", "Cobertura", "Empresa", "Recursos", "Contacto"];
 
 const proofItems = [
-  { icon: ShieldCheck, label: "18 anos de experiencia" },
+  { icon: ShieldCheck, label: "18 años de experiencia" },
   { icon: MapPin, label: "Cobertura nacional" },
   { icon: ClipboardCheck, label: "Reportes claros" },
 ];

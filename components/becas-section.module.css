@@ -1,0 +1,298 @@
+.section {
+  position: relative;
+  min-height: 790px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 70% 17%, rgba(127, 112, 233, 0.13), transparent 28%),
+    linear-gradient(90deg, #ffffff 0%, #fbfbff 51%, #f0efff 100%);
+}
+
+.section::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.76) 37%, rgba(255, 255, 255, 0.14) 73%),
+    radial-gradient(ellipse at 82% 57%, rgba(255, 255, 255, 0.76), transparent 31%);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(410px, 0.74fr) minmax(700px, 1.26fr);
+  align-items: center;
+  gap: clamp(24px, 3vw, 56px);
+  min-height: inherit;
+  padding: clamp(62px, 6.2vw, 92px) clamp(38px, 5vw, 86px);
+}
+
+.copy {
+  max-width: 650px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 45px;
+  margin: 0 0 38px;
+  padding: 0 23px;
+  color: #5140b4;
+  font-size: 19px;
+  font-weight: 650;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1.5px solid rgba(83, 66, 184, 0.24);
+  border-radius: 999px;
+}
+
+.eyebrow img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.title {
+  margin: 0;
+  color: #080a35;
+  font-size: clamp(62px, 5.8vw, 96px);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.062em;
+}
+
+.title span {
+  color: #5140b4;
+}
+
+.lead {
+  max-width: 610px;
+  margin: 31px 0 0;
+  color: #444d78;
+  font-size: clamp(23px, 1.9vw, 31px);
+  font-weight: 430;
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+}
+
+.benefits {
+  display: grid;
+  gap: 25px;
+  margin-top: 44px;
+}
+
+.benefit {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  align-items: center;
+  gap: 24px;
+  color: #11174c;
+  font-size: 23px;
+  font-weight: 560;
+}
+
+.benefitIcon {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(92, 78, 194, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(45, 40, 130, 0.09);
+}
+
+.benefitIcon img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.visual {
+  position: relative;
+  min-height: 630px;
+  align-self: stretch;
+}
+
+.visual::before {
+  position: absolute;
+  right: -5%;
+  bottom: 9%;
+  z-index: 1;
+  width: 76%;
+  height: 73%;
+  content: "";
+  pointer-events: none;
+  border: 2px solid rgba(111, 98, 221, 0.11);
+  border-left-color: transparent;
+  border-radius: 999px;
+}
+
+.dots {
+  position: absolute;
+  left: 4%;
+  bottom: 9%;
+  z-index: 2;
+  width: 170px;
+  height: 170px;
+  background-image: radial-gradient(circle, rgba(105, 91, 225, 0.3) 1.8px, transparent 2px);
+  background-size: 20px 20px;
+  mask-image: linear-gradient(135deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+}
+
+.people {
+  position: absolute;
+  right: 14%;
+  bottom: 0;
+  z-index: 3;
+  width: min(46vw, 560px);
+  height: auto;
+  filter: drop-shadow(0 28px 32px rgba(51, 45, 120, 0.13));
+}
+
+.docCard,
+.evaluation,
+.process {
+  position: absolute;
+  z-index: 5;
+  height: auto;
+  filter: drop-shadow(0 20px 24px rgba(47, 39, 116, 0.12));
+}
+
+.docCard {
+  top: 10%;
+  left: 0%;
+  width: min(24vw, 350px);
+}
+
+.evaluation {
+  top: 60%;
+  left: 0%;
+  width: min(28vw, 405px);
+}
+
+.process {
+  right: 0;
+  bottom: 2%;
+  z-index: 6;
+  width: min(49vw, 690px);
+}
+
+@media (max-width: 1240px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    width: min(100%, 980px);
+    min-height: 650px;
+    margin: -20px auto 0;
+  }
+
+  .people {
+    right: 21%;
+    width: min(62vw, 560px);
+  }
+
+  .docCard {
+    left: 47%;
+    width: min(37vw, 350px);
+  }
+
+  .evaluation {
+    left: 41%;
+    width: min(42vw, 405px);
+  }
+
+  .process {
+    width: min(72vw, 690px);
+  }
+}
+
+@media (max-width: 760px) {
+  .section {
+    min-height: auto;
+  }
+
+  .inner {
+    padding: 54px 22px 38px;
+  }
+
+  .eyebrow {
+    min-height: 42px;
+    margin-bottom: 28px;
+    padding: 0 17px;
+    font-size: 15px;
+  }
+
+  .eyebrow img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .title {
+    font-size: clamp(48px, 14.5vw, 70px);
+  }
+
+  .lead {
+    font-size: 21px;
+  }
+
+  .benefits {
+    gap: 15px;
+    margin-top: 32px;
+  }
+
+  .benefit {
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    font-size: 18px;
+  }
+
+  .benefitIcon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .benefitIcon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .visual {
+    min-height: 500px;
+    margin-top: 0;
+  }
+
+  .people {
+    right: 18%;
+    bottom: 10%;
+    width: 74vw;
+  }
+
+  .docCard {
+    top: 4%;
+    left: 39%;
+    width: 45vw;
+  }
+
+  .evaluation {
+    top: 37%;
+    left: 30%;
+    width: 52vw;
+  }
+
+  .process {
+    right: -12%;
+    bottom: 3%;
+    width: 98vw;
+  }
+
+  .dots {
+    left: -6%;
+    bottom: 7%;
+    width: 130px;
+    height: 130px;
+  }
+}

@@ -14,10 +14,20 @@ const Respuesta72Section = dynamic(
   },
 );
 
+const BecasSection = dynamic(
+  () =>
+    import("@/components/becas-section").then((module) => module.BecasSection),
+  {
+    loading: () => <LazySectionFallback />,
+    ssr: false,
+  },
+);
+
 export function LazyPageSections() {
   return (
     <>
       <Respuesta72Section />
+      <BecasSection />
     </>
   );
 }
