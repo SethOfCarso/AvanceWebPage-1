@@ -1,0 +1,7 @@
+.fallback {
+  min-height: 420px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(246, 245, 255, 0.86)),
+    #ffffff;
+  border-top: 1px solid rgba(55, 55, 120, 0.1);
+}
