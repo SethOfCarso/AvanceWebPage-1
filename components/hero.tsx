@@ -21,12 +21,13 @@ export function Header() {
   return (
     <header className="site-header" aria-label="Navegacion principal">
       <a className="brand" href="#" aria-label="Avance Soluciones">
-        <span className="brand-mark">AVS</span>
-        <span className="brand-name">
-          Avance
-          <br />
-          Soluciones
-        </span>
+        <Image
+          src="/images/avance/logo-de-avance.png"
+          alt="Avance Soluciones"
+          width={188}
+          height={108}
+          priority
+        />
       </a>
 
       <nav className="main-nav" aria-label="Menu principal">

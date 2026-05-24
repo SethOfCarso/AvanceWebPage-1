@@ -52,37 +52,14 @@ a {
   display: inline-flex;
   align-items: center;
   justify-self: start;
-  gap: 17px;
-  color: var(--violet);
-  line-height: 0.86;
+  width: 205px;
+  line-height: 1;
 }
 
-.brand-mark {
-  position: relative;
-  display: inline-block;
-  color: #4b38ad;
-  font-size: clamp(34px, 3vw, 45px);
-  font-weight: 820;
-  letter-spacing: -0.12em;
-}
-
-.brand-mark::before {
-  position: absolute;
-  top: -16px;
-  left: 12px;
-  width: 33px;
-  height: 38px;
-  content: "";
-  border-left: 10px solid #4b38ad;
-  border-top: 10px solid #4b38ad;
-  transform: skewX(-24deg) rotate(-7deg);
-  border-radius: 1px 8px 0 0;
-}
-
-.brand-name {
-  font-size: clamp(19px, 1.52vw, 26px);
-  font-weight: 720;
-  letter-spacing: -0.04em;
+.brand img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .main-nav {
@@ -542,24 +519,7 @@ a {
   }
 
   .brand {
-    gap: 10px;
-  }
-
-  .brand-mark {
-    font-size: 30px;
-  }
-
-  .brand-mark::before {
-    top: -12px;
-    left: 9px;
-    width: 25px;
-    height: 30px;
-    border-left-width: 8px;
-    border-top-width: 8px;
-  }
-
-  .brand-name {
-    font-size: 17px;
+    width: 154px;
   }
 
   .client-button {
