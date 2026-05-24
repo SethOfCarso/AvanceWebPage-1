@@ -34,12 +34,24 @@ const CoberturaSection = dynamic(
   },
 );
 
+const InvestigacionYVerificacion = dynamic(
+  () =>
+    import("@/components/investigacion-y-verificacion").then(
+      (module) => module.InvestigacionYVerificacion,
+    ),
+  {
+    loading: () => <LazySectionFallback />,
+    ssr: false,
+  },
+);
+
 export function LazyPageSections() {
   return (
     <>
       <Respuesta72Section />
       <BecasSection />
       <CoberturaSection />
+      <InvestigacionYVerificacion />
     </>
   );
 }
