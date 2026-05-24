@@ -27,7 +27,7 @@ export function Respuesta72Section() {
           <div className={styles.verify}>
             <span className={styles.verifyIcon} aria-hidden="true">
               <Image
-                src="/images/avance/iconos/Icono escudo.png"
+                src="/images/avance/iconos/Icono_escudo.png"
                 alt=""
                 width={1254}
                 height={1254}
@@ -45,7 +45,7 @@ export function Respuesta72Section() {
 
           <Image
             className={styles.clock}
-            src={`${assetBase}/Repuesta 72hrs - reloj.png`}
+            src={`${assetBase}/Repuesta_72hrs_-_reloj.png`}
             alt=""
             width={1448}
             height={1086}
@@ -53,7 +53,7 @@ export function Respuesta72Section() {
           />
           <Image
             className={styles.check}
-            src={`${assetBase}/Repuesta 72hrs -palomita.png`}
+            src={`${assetBase}/Repuesta_72hrs_-palomita.png`}
             alt=""
             width={1254}
             height={1254}
@@ -61,7 +61,7 @@ export function Respuesta72Section() {
           />
           <Image
             className={`${styles.step} ${styles.stepOne}`}
-            src={`${assetBase}/Repuesta 72hrs - solicitud.png`}
+            src={`${assetBase}/Repuesta_72hrs_-_solicitud.png`}
             alt=""
             width={1086}
             height={1448}
@@ -69,7 +69,7 @@ export function Respuesta72Section() {
           />
           <Image
             className={`${styles.step} ${styles.stepTwo}`}
-            src={`${assetBase}/Repuesta 72hrs - lupa.png`}
+            src={`${assetBase}/Repuesta_72hrs_-_lupa.png`}
             alt=""
             width={1086}
             height={1448}
@@ -77,7 +77,7 @@ export function Respuesta72Section() {
           />
           <Image
             className={`${styles.step} ${styles.stepThree}`}
-            src={`${assetBase}/Repuesta 72hrs -check 3.png`}
+            src={`${assetBase}/Repuesta_72hrs_-check_3.png`}
             alt=""
             width={1086}
             height={1448}

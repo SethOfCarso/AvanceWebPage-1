@@ -23,11 +23,23 @@ const BecasSection = dynamic(
   },
 );
 
+const CoberturaSection = dynamic(
+  () =>
+    import("@/components/cobertura-section").then(
+      (module) => module.CoberturaSection,
+    ),
+  {
+    loading: () => <LazySectionFallback />,
+    ssr: false,
+  },
+);
+
 export function LazyPageSections() {
   return (
     <>
       <Respuesta72Section />
       <BecasSection />
+      <CoberturaSection />
     </>
   );
 }

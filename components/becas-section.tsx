@@ -8,15 +8,15 @@ const becasBase = "/images/avance/Becas";
 const benefits = [
   {
     label: "Proceso ordenado",
-    icon: "/images/avance/iconos/Icono documento listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.png",
   },
   {
     label: "Informacion clara",
-    icon: "/images/avance/iconos/Icono documento listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.png",
   },
   {
     label: "Atencion profesional",
-    icon: "/images/avance/iconos/Icono documento listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.png",
   },
 ];
 
@@ -27,7 +27,7 @@ export function BecasSection() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>
             <Image
-              src="/images/avance/iconos/Icono documento listo.png"
+              src="/images/avance/iconos/Icono_documento_listo.png"
               alt=""
               width={1254}
               height={1254}
@@ -67,7 +67,7 @@ export function BecasSection() {
           <span className={styles.dots} />
           <Image
             className={styles.people}
-            src={`${becasBase}/Becas - Becas personas.png`}
+            src={`${becasBase}/Becas_-_Becas_personas.png`}
             alt=""
             width={1122}
             height={1402}
@@ -75,7 +75,7 @@ export function BecasSection() {
           />
           <Image
             className={styles.docCard}
-            src={`${becasBase}/Becas - Documentos verificados.png`}
+            src={`${becasBase}/Becas_-_Documentos_verificados.png`}
             alt=""
             width={1122}
             height={1402}
@@ -83,7 +83,7 @@ export function BecasSection() {
           />
           <Image
             className={styles.evaluation}
-            src={`${becasBase}/Becas -Evaluacion Integral.png`}
+            src={`${becasBase}/Becas_-Evaluacion_Integral.png`}
             alt=""
             width={1448}
             height={1086}
@@ -91,7 +91,7 @@ export function BecasSection() {
           />
           <Image
             className={styles.process}
-            src={`${becasBase}/Becas - Proceso de becas.png`}
+            src={`${becasBase}/Becas_-_Proceso_de_becas.png`}
             alt=""
             width={2172}
             height={724}

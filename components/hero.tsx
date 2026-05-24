@@ -24,8 +24,8 @@ export function Header() {
         <Image
           src="/images/avance/logo-de-avance.png"
           alt="Avance Soluciones"
-          width={188}
-          height={108}
+          width={170}
+          height={90}
           priority
         />
       </a>
