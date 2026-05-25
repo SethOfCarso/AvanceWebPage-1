@@ -36,7 +36,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(430px, 0.78fr) minmax(650px, 1.22fr);
+  grid-template-columns: minmax(340px, 0.78fr) minmax(0, 1.22fr);
   align-items: center;
   gap: clamp(30px, 3.4vw, 66px);
   min-height: inherit;
@@ -45,6 +45,7 @@
 
 .copy {
   max-width: 610px;
+  min-width: 0;
 }
 
 .kicker {
@@ -163,6 +164,7 @@
   position: relative;
   min-height: 560px;
   align-self: stretch;
+  min-width: 0;
 }
 
 .shield {
@@ -205,7 +207,7 @@
   width: min(51vw, 760px);
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1279px) {
   .inner {
     grid-template-columns: 1fr;
   }
@@ -233,13 +235,13 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .section {
     min-height: auto;
   }
 
   .inner {
-    padding: 54px 22px 38px;
+    padding: 54px clamp(22px, 5.8vw, 36px) 38px;
   }
 
   .kicker {
@@ -313,5 +315,55 @@
     right: -20%;
     bottom: 4%;
     width: 124vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 46px 18px 30px;
+  }
+
+  .kicker {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: clamp(45px, 14.2vw, 62px);
+    letter-spacing: -0.055em;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+    min-height: 60px;
+    font-size: 17px;
+  }
+
+  .trustLine {
+    font-size: 16px;
+  }
+
+  .visual {
+    min-height: 340px;
+  }
+
+  .shield {
+    right: -28%;
+    width: 84vw;
+  }
+
+  .whatsapp,
+  .email {
+    left: -10%;
+    width: 118vw;
+  }
+
+  .info {
+    right: -34%;
+    width: 144vw;
   }
 }

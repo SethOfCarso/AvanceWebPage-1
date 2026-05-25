@@ -122,6 +122,7 @@
   position: relative;
   z-index: 2;
   align-self: start;
+  min-width: 0;
   padding-top: 28px;
 }
 
@@ -254,6 +255,7 @@
   position: relative;
   z-index: 2;
   min-height: 440px;
+  min-width: 0;
 }
 
 .mainAsset,
@@ -477,7 +479,7 @@
   object-fit: contain;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1279px) {
   .carouselShell {
     --slide-width: min(860px, 82vw);
   }
@@ -517,7 +519,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .section {
     min-height: auto;
   }
@@ -668,5 +670,172 @@
   .proofIcon img {
     width: 33px;
     height: 33px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    justify-content: flex-start;
+    padding: 28px 18px 16px;
+  }
+
+  .servicePill {
+    min-height: 36px;
+    margin-left: 0;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .carouselShell {
+    --slide-gap: 14px;
+    --slide-width: calc(100vw - 40px);
+  }
+
+  .viewport {
+    padding: 0 20px;
+  }
+
+  .track {
+    gap: 14px;
+  }
+
+  .slide {
+    min-height: 760px;
+    border-radius: 16px;
+  }
+
+  .slideInner {
+    padding: 28px 18px 244px;
+  }
+
+  .kickerRow {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+  }
+
+  .roundIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .kicker {
+    min-height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .title {
+    font-size: clamp(34px, 11.5vw, 48px);
+    letter-spacing: -0.048em;
+  }
+
+  .description {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .chips {
+    right: 18px;
+    bottom: 22px;
+    left: 18px;
+  }
+
+  .chip {
+    grid-template-columns: 40px 1fr;
+    min-height: 58px;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .chipIcon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .chipIcon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .visual {
+    min-height: 300px;
+  }
+
+  .demandFolder,
+  .buroFolder {
+    right: 18%;
+    width: 72vw;
+  }
+
+  .demandTable,
+  .buroSigns {
+    right: -8%;
+    width: 52vw;
+  }
+
+  .buroSummary {
+    right: -8%;
+    width: 45vw;
+  }
+
+  .buroRisk {
+    right: 20%;
+    width: 52vw;
+  }
+
+  .commercialPanel {
+    right: -4%;
+    width: 100%;
+    min-height: 300px;
+    padding: 18px;
+  }
+
+  .commercialCard,
+  .commercialAddress {
+    width: 160px;
+    padding: 16px;
+  }
+
+  .checkCircle {
+    width: 72px;
+    height: 72px;
+    border-width: 6px;
+    font-size: 46px;
+  }
+
+  .navButton {
+    top: auto;
+    bottom: -58px;
+  }
+
+  .prev {
+    left: calc(50% - 56px);
+  }
+
+  .next {
+    right: calc(50% - 56px);
+  }
+
+  .dots {
+    margin-top: 76px;
+  }
+
+  .proofBar {
+    margin: 24px 18px 34px;
+    padding: 14px 18px;
+  }
+
+  .proofItem,
+  .proofItem:nth-child(2) {
+    grid-template-columns: 48px 1fr;
+    min-height: 70px;
+    font-size: 15px;
+  }
+
+  .proofIcon {
+    width: 46px;
+    height: 46px;
   }
 }
