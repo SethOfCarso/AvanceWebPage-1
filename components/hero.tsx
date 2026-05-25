@@ -1,15 +1,17 @@
 import Image from "next/image";
 import {
   ArrowRight,
-  ChevronDown,
   ClipboardCheck,
   MapPin,
   MessageCircle,
   ShieldCheck,
-  UserRound,
 } from "lucide-react";
 
-const navItems = ["Soluciones", "Cobertura", "Empresa", "Recursos", "Contacto"];
+const navItems = [
+  { label: "Soluciones", href: "#soluciones" },
+  { label: "Becas", href: "#becas" },
+  { label: "Servicios", href: "#investigacion-y-verificacion" },
+];
 
 const proofItems = [
   { icon: ShieldCheck, label: "18 años de experiencia" },
@@ -32,18 +34,15 @@ export function Header() {
 
       <nav className="main-nav" aria-label="Menu principal">
         {navItems.map((item) => (
-          <a key={item} href={`#${item.toLowerCase()}`}>
-            <span>{item}</span>
-            {item === "Soluciones" ? (
-              <ChevronDown size={16} strokeWidth={1.8} aria-hidden="true" />
-            ) : null}
+          <a key={item.label} href={item.href}>
+            <span>{item.label}</span>
           </a>
         ))}
       </nav>
 
       <a className="client-button" href="#contacto">
-        <UserRound size={20} strokeWidth={1.75} aria-hidden="true" />
-        <span>Area de clientes</span>
+        <ArrowRight size={20} strokeWidth={1.75} aria-hidden="true" />
+        <span>Solicitar cotizacion</span>
       </a>
     </header>
   );
@@ -51,7 +50,7 @@ export function Header() {
 
 export function Hero() {
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section className="hero" id="soluciones" aria-labelledby="hero-title">
       <div className="hero-bg" aria-hidden="true">
         <span className="light-line line-one" />
         <span className="light-line line-two" />

@@ -56,11 +56,9 @@ const revealSelectors = [
 ];
 
 const activeSections = [
-  "work",
-  "expertise",
-  "approach",
-  "pricing",
-  "contact",
+  "soluciones",
+  "becas",
+  "investigacion-y-verificacion",
 ];
 
 export function SiteEffects() {
