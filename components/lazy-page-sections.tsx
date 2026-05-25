@@ -45,6 +45,17 @@ const InvestigacionYVerificacion = dynamic(
   },
 );
 
+const NosotrosSection = dynamic(
+  () =>
+    import("@/components/nosotros-section").then(
+      (module) => module.NosotrosSection,
+    ),
+  {
+    loading: () => <LazySectionFallback />,
+    ssr: false,
+  },
+);
+
 export function LazyPageSections() {
   return (
     <>
@@ -52,6 +63,7 @@ export function LazyPageSections() {
       <BecasSection />
       <CoberturaSection />
       <InvestigacionYVerificacion />
+      <NosotrosSection />
     </>
   );
 }
