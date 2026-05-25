@@ -25,7 +25,7 @@ const slides: Array<{
     ),
     description:
       "Informacion util y documentada para complementar su proceso de evaluacion.",
-    icon: "/images/avance/iconos/Icono_escudo.png",
+    icon: "/images/avance/iconos/Icono_escudo.webp",
     chips: ["Confidencial", "Reporte claro", "Decision informada"],
   },
   {
@@ -38,7 +38,7 @@ const slides: Array<{
     ),
     description:
       "Civil, mercantil, familiar, hipotecario y laboral. Informacion documentada para tomar decisiones con mayor seguridad.",
-    icon: "/images/avance/iconos/Icono_documento_investigado.png",
+    icon: "/images/avance/iconos/Icono_documento_investigado.webp",
     chips: ["Informacion verificable", "Analisis claro", "Apoyo para RH"],
   },
   {
@@ -51,7 +51,7 @@ const slides: Array<{
     ),
     description:
       "Valide informacion clave de negocios y operaciones con un enfoque claro, profesional y confiable.",
-    icon: "/images/avance/iconos/icono_oficina.png",
+    icon: "/images/avance/iconos/icono_oficina.webp",
     chips: ["Informacion comprobable", "Proceso agil", "Mayor confianza"],
   },
 ];
@@ -59,19 +59,19 @@ const slides: Array<{
 const proofItems = [
   {
     text: "Manejamos su informacion con los mas altos estandares de seguridad y confidencialidad.",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.png",
+    icon: "/images/avance/iconos/Icono_escudo_defensor.webp",
   },
   {
     text: "Reportes claros, estructurados y faciles de interpretar.",
-    icon: "/images/avance/iconos/Icono_documento_listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
   {
     text: "Apoyo profesional para tomar decisiones con mayor certeza.",
-    icon: "/images/avance/iconos/Icono_personas.png",
+    icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
     text: "Entregas rapidas en 72 horas habiles.",
-    icon: "/images/avance/iconos/Icono_tiempo.png",
+    icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
 ];
 
@@ -158,7 +158,7 @@ export function InvestigacionYVerificacion() {
                       <span className={styles.chip} key={chip}>
                         <span className={styles.chipIcon} aria-hidden="true">
                           <Image
-                            src="/images/avance/iconos/Icono_escudo.png"
+                            src="/images/avance/iconos/Icono_escudo.webp"
                             alt=""
                             width={1254}
                             height={1254}
@@ -224,7 +224,7 @@ function SlideVisual({ id }: { id: SlideId }) {
       <div className={styles.visual} aria-hidden="true">
         <Image
           className={`${styles.mainAsset} ${styles.demandFolder}`}
-          src="/images/avance/InvDemandas/Inv_Demandas_-_folder.png"
+          src="/images/avance/InvDemandas/Inv_Demandas_-_folder.webp"
           alt=""
           width={1122}
           height={1402}
@@ -232,7 +232,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.demandTable}`}
-          src="/images/avance/InvDemandas/Inv_Demandas_-_tabla.png"
+          src="/images/avance/InvDemandas/Inv_Demandas_-_tabla.webp"
           alt=""
           width={1122}
           height={1402}
@@ -247,7 +247,7 @@ function SlideVisual({ id }: { id: SlideId }) {
       <div className={styles.visual} aria-hidden="true">
         <Image
           className={`${styles.mainAsset} ${styles.buroFolder}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_Folder.png"
+          src="/images/avance/BuroDeCredito/Buro_de_credito_-_Folder.webp"
           alt=""
           width={1122}
           height={1402}
@@ -255,7 +255,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroSummary}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_resumen_credito.png"
+          src="/images/avance/BuroDeCredito/Buro_de_credito_-_resumen_credito.webp"
           alt=""
           width={1254}
           height={1254}
@@ -263,7 +263,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroRisk}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_rango.png"
+          src="/images/avance/BuroDeCredito/Buro_de_credito_-_rango.webp"
           alt=""
           width={1254}
           height={1254}
@@ -271,7 +271,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroSigns}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_relevant_signs.png"
+          src="/images/avance/BuroDeCredito/Buro_de_credito_-_relevant_signs.webp"
           alt=""
           width={1254}
           height={1254}

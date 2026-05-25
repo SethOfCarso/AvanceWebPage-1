@@ -7,32 +7,32 @@ const metrics = [
   {
     value: "18 años",
     label: "de experiencia",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.png",
+    icon: "/images/avance/iconos/Icono_escudo_defensor.webp",
   },
   {
     value: "72 horas",
     label: "habiles",
-    icon: "/images/avance/iconos/Icono_tiempo.png",
+    icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
   {
     value: "Cobertura",
     label: "nacional",
-    icon: "/images/avance/iconos/Icono_lugar.png",
+    icon: "/images/avance/iconos/Icono_lugar.webp",
   },
 ];
 
 const values = [
   {
     label: "Cercania",
-    icon: "/images/avance/iconos/Icono_personas.png",
+    icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
     label: "Claridad",
-    icon: "/images/avance/iconos/Icono_documento_listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
   {
     label: "Confianza",
-    icon: "/images/avance/iconos/Icono_escudo.png",
+    icon: "/images/avance/iconos/Icono_escudo.webp",
   },
 ];
 
@@ -90,7 +90,7 @@ export function NosotrosSection() {
         <div className={styles.visual} aria-hidden="true">
           <Image
             className={styles.report}
-            src="/images/avance/Nosotros/Nosotros_-_reporte.png"
+            src="/images/avance/Nosotros/Nosotros_-_reporte.webp"
             alt=""
             width={971}
             height={1619}
@@ -98,7 +98,7 @@ export function NosotrosSection() {
           />
           <Image
             className={styles.risk}
-            src="/images/avance/Nosotros/Nosotros_-_semaforo.png"
+            src="/images/avance/Nosotros/Nosotros_-_semaforo.webp"
             alt=""
             width={1122}
             height={1402}
@@ -106,7 +106,7 @@ export function NosotrosSection() {
           />
           <Image
             className={styles.confidence}
-            src="/images/avance/Nosotros/Nosotros_-_carta_confianza.png"
+            src="/images/avance/Nosotros/Nosotros_-_carta_confianza.webp"
             alt=""
             width={1448}
             height={1086}

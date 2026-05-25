@@ -32,7 +32,7 @@ export function ContactoSection() {
           <div className={styles.trustLine}>
             <span className={styles.trustIcon} aria-hidden="true">
               <Image
-                src="/images/avance/iconos/Icono_escudo.png"
+                src="/images/avance/iconos/Icono_escudo.webp"
                 alt=""
                 width={1254}
                 height={1254}
@@ -46,7 +46,7 @@ export function ContactoSection() {
         <div className={styles.visual} aria-hidden="true">
           <Image
             className={styles.shield}
-            src="/images/avance/riesgos/escudo.png"
+            src="/images/avance/riesgos/escudo.webp"
             alt=""
             width={1254}
             height={1254}
@@ -54,7 +54,7 @@ export function ContactoSection() {
           />
           <Image
             className={styles.whatsapp}
-            src="/images/avance/Contacto/Contacto_-_whats_1.png"
+            src="/images/avance/Contacto/Contacto_-_whats_1.webp"
             alt=""
             width={1672}
             height={941}
@@ -62,7 +62,7 @@ export function ContactoSection() {
           />
           <Image
             className={styles.email}
-            src="/images/avance/Contacto/Contact_-_correo.png"
+            src="/images/avance/Contacto/Contact_-_correo.webp"
             alt=""
             width={1672}
             height={941}
@@ -70,7 +70,7 @@ export function ContactoSection() {
           />
           <Image
             className={styles.info}
-            src="/images/avance/Contacto/Contacto_-_Informacion.png"
+            src="/images/avance/Contacto/Contacto_-_Informacion.webp"
             alt=""
             width={1916}
             height={821}

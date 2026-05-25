@@ -8,15 +8,15 @@ const coberturaBase = "/images/avance/Cobertura";
 const miniBenefits = [
   {
     label: "Atencion profesional",
-    icon: "/images/avance/iconos/Icono_personas.png",
+    icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
     label: "Cobertura nacional",
-    icon: "/images/avance/iconos/Icono_lugar.png",
+    icon: "/images/avance/iconos/Icono_lugar.webp",
   },
   {
     label: "Respuesta agil",
-    icon: "/images/avance/iconos/Icono_documento_listo.png",
+    icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
 ];
 
@@ -24,22 +24,22 @@ const stats = [
   {
     value: "32",
     label: "Estados cubiertos",
-    icon: "/images/avance/iconos/icono_oficina.png",
+    icon: "/images/avance/iconos/icono_oficina.webp",
   },
   {
     value: "+2,500",
     label: "Municipios alcanzados",
-    icon: "/images/avance/iconos/Icono_lugar.png",
+    icon: "/images/avance/iconos/Icono_lugar.webp",
   },
   {
     value: "Equipo nacional",
     label: "Especialistas en todo el pais",
-    icon: "/images/avance/iconos/Icono_muchas_personas.png",
+    icon: "/images/avance/iconos/Icono_muchas_personas.webp",
   },
   {
     value: "72 h",
     label: "Respuesta en tiempo record",
-    icon: "/images/avance/iconos/Icono_tiempo.png",
+    icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
 ];
 
@@ -54,7 +54,7 @@ export function CoberturaSection() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>
             <Image
-              src="/images/avance/iconos/Icono_lugar.png"
+              src="/images/avance/iconos/Icono_lugar.webp"
               alt=""
               width={1254}
               height={1254}
@@ -93,7 +93,7 @@ export function CoberturaSection() {
           <span className={styles.dots} />
           <Image
             className={styles.map}
-            src={`${coberturaBase}/Cobertura_-_Mexico.png`}
+            src={`${coberturaBase}/Cobertura_-_Mexico.webp`}
             alt=""
             width={1448}
             height={1086}
@@ -101,7 +101,7 @@ export function CoberturaSection() {
           />
           <Image
             className={styles.hoursCard}
-            src={`${coberturaBase}/Cobertura_-_72_horas.png`}
+            src={`${coberturaBase}/Cobertura_-_72_horas.webp`}
             alt=""
             width={1254}
             height={1254}
