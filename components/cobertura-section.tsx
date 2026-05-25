@@ -7,7 +7,7 @@ const coberturaBase = "/images/avance/Cobertura";
 
 const miniBenefits = [
   {
-    label: "Atencion profesional",
+    label: "Atención profesional",
     icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
@@ -15,7 +15,7 @@ const miniBenefits = [
     icon: "/images/avance/iconos/Icono_lugar.webp",
   },
   {
-    label: "Respuesta agil",
+    label: "Respuesta ágil",
     icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
 ];
@@ -33,12 +33,12 @@ const stats = [
   },
   {
     value: "Equipo nacional",
-    label: "Especialistas en todo el pais",
+    label: "Especialistas en todo el país",
     icon: "/images/avance/iconos/Icono_muchas_personas.webp",
   },
   {
     value: "72 h",
-    label: "Respuesta en tiempo record",
+    label: "Respuesta en tiempo récord",
     icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
 ];
@@ -60,15 +60,15 @@ export function CoberturaSection() {
               height={1254}
               loading="lazy"
             />
-            <span>Presencia en todo Mexico</span>
+            <span>Presencia en todo México</span>
           </p>
 
           <h2 className={styles.title} id="cobertura-title">
             Cobertura <span>nacional</span>
           </h2>
           <p className={styles.lead}>
-            Atendemos solicitudes en toda la Republica con respuesta en{" "}
-            <strong>72 horas habiles.</strong>
+            Atendemos solicitudes en toda la República con respuesta en{" "}
+            <strong>72 horas hábiles.</strong>
           </p>
 
           <div className={styles.miniBenefits} aria-label="Beneficios de cobertura">

@@ -17,14 +17,14 @@ const slides: Array<{
 }> = [
   {
     id: "buro",
-    kicker: "Validacion financiera",
+    kicker: "Validación financiera",
     title: (
       <>
-        Investigacion de <span>Buro de Credito</span>
+        Investigación de <span>Buró de Crédito</span>
       </>
     ),
     description:
-      "Informacion util y documentada para complementar su proceso de evaluacion.",
+      "Información útil y documentada para complementar su proceso de evaluación.",
     icon: "/images/avance/iconos/Icono_escudo.webp",
     chips: ["Confidencial", "Reporte claro", "Decision informada"],
   },
@@ -33,36 +33,36 @@ const slides: Array<{
     kicker: "Servicio especializado",
     title: (
       <>
-        Investigacion de <strong>demandas judiciales</strong>
+        Investigación de <strong>demandas judiciales</strong>
       </>
     ),
     description:
-      "Civil, mercantil, familiar, hipotecario y laboral. Informacion documentada para tomar decisiones con mayor seguridad.",
+      "Civil, mercantil, familiar, hipotecario y laboral. Información documentada para tomar decisiones con mayor seguridad.",
     icon: "/images/avance/iconos/Icono_documento_investigado.webp",
-    chips: ["Informacion verificable", "Analisis claro", "Apoyo para RH"],
+    chips: ["Información verificable", "Análisis claro", "Apoyo para RH"],
   },
   {
     id: "comercial",
     kicker: "Apoyo empresarial",
     title: (
       <>
-        Verificacion <span>comercial</span>
+        Verificación <span>comercial</span>
       </>
     ),
     description:
-      "Valide informacion clave de negocios y operaciones con un enfoque claro, profesional y confiable.",
+      "Valide información clave de negocios y operaciones con un enfoque claro, profesional y confiable.",
     icon: "/images/avance/iconos/icono_oficina.webp",
-    chips: ["Informacion comprobable", "Proceso agil", "Mayor confianza"],
+    chips: ["Información comprobable", "Proceso ágil", "Mayor confianza"],
   },
 ];
 
 const proofItems = [
   {
-    text: "Manejamos su informacion con los mas altos estandares de seguridad y confidencialidad.",
+    text: "Manejamos su información con los más altos estándares de seguridad y confidencialidad.",
     icon: "/images/avance/iconos/Icono_escudo_defensor.webp",
   },
   {
-    text: "Reportes claros, estructurados y faciles de interpretar.",
+    text: "Reportes claros, estructurados y fáciles de interpretar.",
     icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
   {
@@ -70,7 +70,7 @@ const proofItems = [
     icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
-    text: "Entregas rapidas en 72 horas habiles.",
+    text: "Entregas rápidas en 72 horas hábiles.",
     icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
 ];
@@ -286,7 +286,7 @@ function SlideVisual({ id }: { id: SlideId }) {
       <div className={styles.commercialPanel}>
         <div className={styles.commercialCard}>
           <span className={styles.checkCircle}>✓</span>
-          <strong>Verificacion comercial</strong>
+          <strong>Verificación comercial</strong>
           <span className={styles.line} />
           <span className={styles.shortLine} />
         </div>

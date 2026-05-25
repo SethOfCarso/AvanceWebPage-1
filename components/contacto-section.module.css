@@ -4,7 +4,8 @@
   overflow: hidden;
   background:
     radial-gradient(circle at 78% 23%, rgba(128, 111, 232, 0.22), transparent 31%),
-    linear-gradient(90deg, #ffffff 0%, #fbfbff 49%, #eeecff 100%);
+    radial-gradient(circle at 12% 72%, rgba(242, 100, 25, 0.08), transparent 25%),
+    linear-gradient(112deg, #fbfbf5 0%, #fafbff 49%, #edeaff 100%);
 }
 
 .section::before {
@@ -13,8 +14,8 @@
   content: "";
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.72) 41%, rgba(255, 255, 255, 0.08) 78%),
-    repeating-linear-gradient(165deg, transparent 0 30px, rgba(255, 255, 255, 0.22) 31px, transparent 34px);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.62) 41%, rgba(255, 255, 255, 0.08) 78%),
+    repeating-linear-gradient(165deg, transparent 0 30px, rgba(8, 10, 53, 0.025) 31px, transparent 34px);
 }
 
 .section::after {
@@ -51,7 +52,7 @@
 .kicker {
   margin: 0 0 33px;
   color: #5140b4;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 650;
   letter-spacing: -0.025em;
 }
@@ -73,7 +74,9 @@
   font-size: clamp(66px, 6.1vw, 106px);
   font-weight: 830;
   line-height: 0.95;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.048em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .title span {
@@ -88,6 +91,7 @@
   font-size: clamp(23px, 1.85vw, 30px);
   line-height: 1.42;
   letter-spacing: -0.025em;
+  overflow-wrap: break-word;
 }
 
 .actions {
@@ -133,6 +137,17 @@
   transform: translateY(-2px);
 }
 
+.primary:active,
+.secondary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.primary:focus-visible,
+.secondary:focus-visible {
+  outline: 3px solid rgba(242, 100, 25, 0.36);
+  outline-offset: 5px;
+}
+
 .trustLine {
   display: inline-flex;
   align-items: center;
@@ -150,7 +165,7 @@
   place-items: center;
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(92, 78, 194, 0.12);
-  border-radius: 999px;
+  border-radius: 14px;
   box-shadow: 0 14px 28px rgba(45, 40, 130, 0.075);
 }
 
@@ -193,18 +208,21 @@
   top: 18%;
   left: 1%;
   width: min(48vw, 680px);
+  transform: rotate(-2deg);
 }
 
 .email {
   top: 45%;
   left: 1%;
   width: min(48vw, 680px);
+  transform: rotate(1.5deg);
 }
 
 .info {
   right: -2%;
   bottom: 7%;
   width: min(51vw, 760px);
+  transform: rotate(-1deg);
 }
 
 @media (max-width: 1279px) {
@@ -328,12 +346,14 @@
   }
 
   .title {
-    font-size: clamp(45px, 14.2vw, 62px);
+    font-size: clamp(39px, 12.2vw, 52px);
     letter-spacing: -0.055em;
+    text-wrap: auto;
   }
 
   .lead {
     font-size: 18px;
+    max-width: 31ch;
   }
 
   .primary,

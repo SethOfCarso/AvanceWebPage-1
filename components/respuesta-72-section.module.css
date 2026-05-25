@@ -3,9 +3,9 @@
   min-height: 790px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 63% 26%, rgba(255, 255, 255, 0.95), transparent 25%),
-    radial-gradient(circle at 84% 58%, rgba(111, 91, 232, 0.12), transparent 24%),
-    linear-gradient(90deg, #ffffff 0%, #fbfbff 52%, #f1efff 100%);
+    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.92), transparent 24%),
+    radial-gradient(circle at 84% 58%, rgba(111, 91, 232, 0.13), transparent 24%),
+    linear-gradient(118deg, #fbfbf6 0%, #f4f6fb 48%, #ece9ff 100%);
 }
 
 .section::before {
@@ -14,8 +14,21 @@
   content: "";
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.7) 39%, rgba(255, 255, 255, 0.18) 72%),
-    radial-gradient(ellipse at 71% 68%, rgba(255, 122, 25, 0.13), transparent 24%);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.58) 42%, rgba(255, 255, 255, 0.1) 74%),
+    radial-gradient(ellipse at 71% 68%, rgba(242, 100, 25, 0.14), transparent 24%),
+    repeating-linear-gradient(135deg, rgba(8, 10, 53, 0.025) 0 1px, transparent 1px 15px);
+}
+
+.section::after {
+  position: absolute;
+  inset: 7% auto auto -8%;
+  width: 42vw;
+  height: 42vw;
+  content: "";
+  pointer-events: none;
+  border: 1px solid rgba(81, 64, 180, 0.09);
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 54px rgba(255, 255, 255, 0.2);
 }
 
 .inner {
@@ -45,9 +58,9 @@
 .kicker {
   margin: 0 0 25px;
   color: #ff670f;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 760;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
@@ -58,7 +71,9 @@
   font-size: clamp(56px, 5.55vw, 94px);
   font-weight: 790;
   line-height: 0.98;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .title strong {
@@ -87,6 +102,7 @@
   font-weight: 420;
   line-height: 1.2;
   letter-spacing: -0.025em;
+  overflow-wrap: break-word;
 }
 
 .lead strong {
@@ -104,9 +120,10 @@
   font-size: 22px;
   font-weight: 500;
   background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(81, 64, 180, 0.13);
   border-radius: 12px;
-  box-shadow: 0 18px 36px rgba(51, 47, 132, 0.08);
+  box-shadow: 0 18px 36px rgba(55, 48, 136, 0.09);
+  backdrop-filter: blur(10px);
 }
 
 .verifyIcon {
@@ -162,6 +179,7 @@
   width: min(47vw, 680px);
   height: auto;
   filter: drop-shadow(0 38px 34px rgba(55, 45, 133, 0.18));
+  transform: rotate(-2deg);
 }
 
 .check {
@@ -215,6 +233,19 @@
   width: min(11.5vw, 154px);
   height: auto;
   filter: drop-shadow(0 24px 22px rgba(47, 39, 116, 0.16));
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.visual:hover .stepOne {
+  transform: translateY(-8px) rotate(-3deg);
+}
+
+.visual:hover .stepTwo {
+  transform: translateY(-12px);
+}
+
+.visual:hover .stepThree {
+  transform: translateY(-8px) rotate(3deg);
 }
 
 .stepOne {
@@ -358,16 +389,24 @@
   }
 
   .title {
-    font-size: clamp(40px, 13.5vw, 54px);
+    max-width: 9.5ch;
+    font-size: clamp(38px, 11.4vw, 46px);
     letter-spacing: -0.048em;
+    text-wrap: auto;
+  }
+
+  .title strong {
+    display: inline-block;
   }
 
   .lead {
     font-size: 19px;
+    max-width: 28ch;
   }
 
   .verify {
     width: 100%;
+    max-width: calc(100vw - 36px);
     gap: 12px;
     padding: 10px 16px;
     font-size: 16px;

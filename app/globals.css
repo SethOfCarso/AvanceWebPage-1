@@ -4,6 +4,9 @@
   --violet: #5140b4;
   --violet-bright: #725ce9;
   --violet-soft: #a798ff;
+  --orange: #f26419;
+  --paper: #fbfbf6;
+  --mist: #eef1f8;
   --line: rgba(55, 55, 120, 0.16);
   --surface: rgba(255, 255, 255, 0.82);
   --header-height: 106px;
@@ -21,7 +24,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: #f8f9ff;
+  background: #f7f8f4;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   text-rendering: geometricprecision;
   -webkit-font-smoothing: antialiased;
@@ -31,6 +34,17 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(242, 100, 25, 0.38);
+  outline-offset: 4px;
 }
 
 .site-header {

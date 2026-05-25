@@ -11,11 +11,11 @@ const benefits = [
     icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
   {
-    label: "Informacion clara",
+    label: "Información clara",
     icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
   {
-    label: "Atencion profesional",
+    label: "Atención profesional",
     icon: "/images/avance/iconos/Icono_documento_listo.webp",
   },
 ];
@@ -40,7 +40,7 @@ export function BecasSection() {
             Becas <span>escolares</span>
           </h2>
           <p className={styles.lead}>
-            Apoyo en procesos de validacion y revision con una presentacion
+            Apoyo en procesos de validación y revisión con una presentación
             clara y profesional.
           </p>
 

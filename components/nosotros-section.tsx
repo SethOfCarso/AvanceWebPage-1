@@ -11,7 +11,7 @@ const metrics = [
   },
   {
     value: "72 horas",
-    label: "habiles",
+    label: "hábiles",
     icon: "/images/avance/iconos/Icono_tiempo.webp",
   },
   {
@@ -23,7 +23,7 @@ const metrics = [
 
 const values = [
   {
-    label: "Cercania",
+    label: "Cercanía",
     icon: "/images/avance/iconos/Icono_personas.webp",
   },
   {
@@ -41,13 +41,13 @@ export function NosotrosSection() {
     <section className={styles.section} id="nosotros" aria-labelledby="nosotros-title">
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <p className={styles.eyebrow}>Por que AVS</p>
+          <p className={styles.eyebrow}>Por qué AVS</p>
           <h2 className={styles.title} id="nosotros-title">
             18 años ayudando a empresas a contratar
             <span>con mayor seguridad</span>
           </h2>
           <p className={styles.lead}>
-            Atencion cercana, reportes claros e informacion verificable para
+            Atención cercana, reportes claros e información verificable para
             decidir con confianza.
           </p>
 

@@ -11,17 +11,17 @@ export function ContactoSection() {
         <div className={styles.copy}>
           <p className={styles.kicker}>Hablemos</p>
           <h2 className={styles.title} id="contacto-title">
-            Solicite una <span>cotizacion</span>
+            Solicite una <span>cotización</span>
           </h2>
           <p className={styles.lead}>
-            Conozca como AVS Avance Soluciones puede apoyar a su empresa con
-            informacion clara y atencion profesional.
+            Conozca cómo AVS Avance Soluciones puede apoyar a su empresa con
+            información clara y atención profesional.
           </p>
 
           <div className={styles.actions} aria-label="Opciones de contacto">
             <a className={styles.primary} href="https://wa.me/523318922770">
               <ArrowRight size={28} strokeWidth={1.8} aria-hidden="true" />
-              <span>Solicitar cotizacion</span>
+              <span>Solicitar cotización</span>
             </a>
             <a className={styles.secondary} href="mailto:contacto@avancesoluciones.com.mx">
               <Mail size={31} strokeWidth={1.8} aria-hidden="true" />

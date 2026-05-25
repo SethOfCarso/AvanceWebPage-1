@@ -4,7 +4,8 @@
   overflow: hidden;
   background:
     radial-gradient(circle at 76% 25%, rgba(133, 116, 235, 0.18), transparent 30%),
-    linear-gradient(90deg, #ffffff 0%, #fbfbff 48%, #eeecff 100%);
+    radial-gradient(circle at 15% 70%, rgba(242, 100, 25, 0.08), transparent 26%),
+    linear-gradient(112deg, #fbfbf5 0%, #fafbff 48%, #eeecff 100%);
 }
 
 .section::before {
@@ -13,8 +14,8 @@
   content: "";
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.72) 39%, rgba(255, 255, 255, 0.1) 76%),
-    repeating-linear-gradient(170deg, transparent 0 28px, rgba(255, 255, 255, 0.22) 29px, transparent 32px);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.84) 0%, rgba(255, 255, 255, 0.62) 39%, rgba(255, 255, 255, 0.1) 76%),
+    repeating-linear-gradient(170deg, transparent 0 28px, rgba(8, 10, 53, 0.025) 29px, transparent 32px);
 }
 
 .inner {
@@ -54,7 +55,9 @@
   font-size: clamp(58px, 5.3vw, 92px);
   font-weight: 820;
   line-height: 1.04;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.047em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .title span {
@@ -69,12 +72,13 @@
   font-size: clamp(22px, 1.75vw, 28px);
   line-height: 1.42;
   letter-spacing: -0.025em;
+  overflow-wrap: break-word;
 }
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 26px;
+  grid-template-columns: 1.2fr 0.95fr 0.95fr;
+  gap: 16px;
   max-width: 680px;
   margin-top: 40px;
 }
@@ -82,14 +86,22 @@
 .metric {
   display: grid;
   justify-items: center;
-  min-height: 170px;
-  padding: 28px 22px 24px;
+  min-height: 160px;
+  padding: 26px 22px 23px;
   text-align: center;
   color: #10164c;
   background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(255, 255, 255, 0.78);
-  border-radius: 16px;
-  box-shadow: 0 20px 38px rgba(58, 52, 143, 0.08);
+  border: 1px solid rgba(81, 64, 180, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 38px rgba(58, 52, 143, 0.075);
+  transition:
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    background 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.metric:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-4px);
 }
 
 .metricIcon {
@@ -123,7 +135,7 @@
 .values {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
+  gap: 14px;
   max-width: 680px;
   margin-top: 28px;
 }
@@ -139,7 +151,7 @@
   font-weight: 650;
   background: rgba(255, 255, 255, 0.52);
   border: 1.5px solid rgba(83, 66, 184, 0.2);
-  border-radius: 999px;
+  border-radius: 12px;
 }
 
 .value img {
@@ -199,18 +211,21 @@
   top: 10%;
   left: 6%;
   width: min(28vw, 390px);
+  transform: rotate(-4deg);
 }
 
 .risk {
   top: 16%;
   right: 0;
   width: min(21vw, 310px);
+  transform: rotate(5deg);
 }
 
 .confidence {
   right: 0;
   bottom: 10%;
   width: min(26vw, 360px);
+  transform: rotate(-2deg);
 }
 
 @media (max-width: 1279px) {
@@ -330,12 +345,14 @@
   }
 
   .title {
-    font-size: clamp(38px, 12.5vw, 52px);
+    font-size: clamp(35px, 11.4vw, 46px);
     letter-spacing: -0.048em;
+    text-wrap: auto;
   }
 
   .lead {
     font-size: 18px;
+    max-width: 31ch;
   }
 
   .metrics,
@@ -347,6 +364,7 @@
     grid-template-columns: 50px 1fr;
     min-height: 86px;
     padding: 16px;
+    max-width: calc(100vw - 36px);
   }
 
   .metricIcon,

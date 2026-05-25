@@ -17,11 +17,11 @@ export function Respuesta72Section() {
 
           <p className={styles.kicker}>Tiempo de respuesta</p>
           <h2 className={styles.title} id="respuesta-72-title">
-            Respuesta en <strong>72</strong> <span>horas habiles.</span>
+            Respuesta en <strong>72</strong> <span>horas hábiles.</span>
           </h2>
           <span className={styles.orangeRule} aria-hidden="true" />
           <p className={styles.lead}>
-            Agilidad para procesos de <strong>contratacion urgentes.</strong>
+            Agilidad para procesos de <strong>contratación urgentes.</strong>
           </p>
 
           <div className={styles.verify}>
@@ -34,7 +34,7 @@ export function Respuesta72Section() {
                 loading="lazy"
               />
             </span>
-            <span>Informacion verificable</span>
+            <span>Información verificable</span>
           </div>
         </div>
 
