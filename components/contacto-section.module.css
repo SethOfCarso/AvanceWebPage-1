@@ -205,14 +205,14 @@
 }
 
 .whatsapp {
-  top: 18%;
+  top: 0%;
   left: 1%;
   width: min(48vw, 680px);
   transform: rotate(-2deg);
 }
 
 .email {
-  top: 45%;
+  top: 25%;
   left: 1%;
   width: min(48vw, 680px);
   transform: rotate(1.5deg);
@@ -220,7 +220,7 @@
 
 .info {
   right: -2%;
-  bottom: 7%;
+  bottom: 0%;
   width: min(51vw, 760px);
   transform: rotate(-1deg);
 }

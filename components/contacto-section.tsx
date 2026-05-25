@@ -19,7 +19,7 @@ export function ContactoSection() {
           </p>
 
           <div className={styles.actions} aria-label="Opciones de contacto">
-            <a className={styles.primary} href="https://wa.me/523318922770">
+            <a className={styles.primary} href="https://wa.me/523311183521">
               <ArrowRight size={28} strokeWidth={1.8} aria-hidden="true" />
               <span>Solicitar cotización</span>
             </a>
