@@ -507,3 +507,109 @@
     letter-spacing: 0;
   }
 }
+
+:global(.motion-ready) .section .copy {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  animation: none;
+  transition:
+    opacity 760ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 920ms cubic-bezier(0.32, 0.72, 0, 1);
+  will-change: opacity, transform;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .copy {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+:global(.motion-ready) .section .benefit {
+  opacity: 0;
+  transform: translate3d(-26px, 18px, 0);
+}
+
+:global(.motion-ready) .section .benefit:nth-child(1) {
+  transition-delay: 120ms;
+}
+
+:global(.motion-ready) .section .benefit:nth-child(2) {
+  transition-delay: 210ms;
+}
+
+:global(.motion-ready) .section .benefit:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .benefit {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+:global(.motion-ready) .section .people {
+  opacity: 1;
+  transform: rotate(-1.5deg);
+}
+
+:global(.motion-ready) .section .docCard {
+  opacity: 0;
+  transform: translate3d(-180px, -170px, 0) rotate(-34deg) scale(0.78);
+}
+
+:global(.motion-ready) .section .evaluation {
+  opacity: 0;
+  transform: translate3d(-210px, 160px, 0) rotate(38deg) scale(0.78);
+}
+
+:global(.motion-ready) .section .process {
+  opacity: 0;
+  transform: translate3d(210px, 170px, 0) rotate(32deg) scale(0.78);
+}
+
+:global(.motion-ready) .section .docCard,
+:global(.motion-ready) .section .evaluation,
+:global(.motion-ready) .section .process {
+  transform-origin: center;
+  transition:
+    opacity 620ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 980ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+:global(.motion-ready) .section .docCard {
+  transition-delay: 180ms;
+}
+
+:global(.motion-ready) .section .evaluation {
+  transition-delay: 310ms;
+}
+
+:global(.motion-ready) .section .process {
+  transition-delay: 440ms;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .docCard {
+  opacity: 1;
+  transform: rotate(-5deg);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .evaluation {
+  opacity: 1;
+  transform: rotate(4deg);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .process {
+  opacity: 1;
+  transform: rotate(-1deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.motion-ready) .section .copy,
+  :global(.motion-ready) .section .benefit,
+  :global(.motion-ready) .section .people,
+  :global(.motion-ready) .section .docCard,
+  :global(.motion-ready) .section .evaluation,
+  :global(.motion-ready) .section .process {
+    opacity: 1;
+    transform: none;
+  }
+}

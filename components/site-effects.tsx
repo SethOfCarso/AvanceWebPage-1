@@ -65,6 +65,7 @@ export function SiteEffects() {
   useEffect(() => {
     const header = document.querySelector(".site-header");
     const navLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>(".main-nav a"));
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const setHeaderState = () => {
       header?.classList.toggle("is-scrolled", window.scrollY > 18);
@@ -84,6 +85,40 @@ export function SiteEffects() {
     immediateHeroNodes.forEach((node) => node.classList.remove("is-visible"));
 
     document.body.classList.add("motion-ready");
+
+    const animatedSections = new WeakSet<Element>();
+    const revealSection = (section: Element) => {
+      section.classList.add("section-in-view");
+    };
+
+    const sectionRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            revealSection(entry.target);
+            sectionRevealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -14% 0px", threshold: 0.16 },
+    );
+
+    const registerAnimatedSections = () => {
+      document.querySelectorAll<HTMLElement>("main > section[id]").forEach((section) => {
+        if (animatedSections.has(section)) return;
+        animatedSections.add(section);
+        section.classList.add("scroll-section");
+
+        if (reduceMotion) {
+          revealSection(section);
+          return;
+        }
+
+        sectionRevealObserver.observe(section);
+      });
+    };
+
+    registerAnimatedSections();
 
     revealNodes.forEach((node, index) => {
       node.classList.add("reveal-on-scroll");
@@ -143,11 +178,27 @@ export function SiteEffects() {
       if (section) sectionObserver.observe(section);
     });
 
+    const dynamicSectionObserver = new MutationObserver(() => {
+      registerAnimatedSections();
+
+      activeSections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) sectionObserver.observe(section);
+      });
+    });
+
+    const main = document.querySelector("main");
+    if (main) {
+      dynamicSectionObserver.observe(main, { childList: true, subtree: false });
+    }
+
     return () => {
       window.removeEventListener("scroll", setHeaderState);
       timers.forEach((timer) => window.clearTimeout(timer));
       revealObserver.disconnect();
+      sectionRevealObserver.disconnect();
       sectionObserver.disconnect();
+      dynamicSectionObserver.disconnect();
     };
   }, []);
 

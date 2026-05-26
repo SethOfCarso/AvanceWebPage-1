@@ -548,3 +548,135 @@
     letter-spacing: 0;
   }
 }
+
+:global(.motion-ready) .section .copy,
+:global(.motion-ready) .section .visual {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  animation: none;
+  transition:
+    opacity 760ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 920ms cubic-bezier(0.32, 0.72, 0, 1);
+  will-change: opacity, transform;
+}
+
+:global(.motion-ready) .section .visual {
+  transition-delay: 90ms;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .copy,
+:global(.motion-ready) .section:global(.section-in-view) .visual {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+:global(.motion-ready) .section .motionLines,
+:global(.motion-ready) .section .platform,
+:global(.motion-ready) .section .stepTrack {
+  opacity: 0;
+  transform: translate3d(42px, 0, 0) scaleX(0.84);
+  transform-origin: right center;
+  transition:
+    opacity 650ms cubic-bezier(0.32, 0.72, 0, 1) 160ms,
+    transform 860ms cubic-bezier(0.32, 0.72, 0, 1) 160ms;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .motionLines,
+:global(.motion-ready) .section:global(.section-in-view) .platform,
+:global(.motion-ready) .section:global(.section-in-view) .stepTrack {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scaleX(1);
+}
+
+:global(.motion-ready) .section .clock {
+  opacity: 0;
+  transform: translate3d(22%, -5%, 0) rotate(-8deg) scale(0.94);
+}
+
+:global(.motion-ready) .section .check {
+  opacity: 0;
+  transform: translate3d(88px, -18px, 0) rotate(10deg) scale(0.82);
+}
+
+:global(.motion-ready) .section .stepOne {
+  opacity: 0;
+  transform: translate3d(-150px, 34px, 0) rotate(-14deg) scale(0.88);
+}
+
+:global(.motion-ready) .section .stepTwo {
+  opacity: 0;
+  transform: translate3d(-112px, 42px, 0) rotate(-8deg) scale(0.9);
+}
+
+:global(.motion-ready) .section .stepThree {
+  opacity: 0;
+  transform: translate3d(-74px, 34px, 0) rotate(8deg) scale(0.9);
+}
+
+:global(.motion-ready) .section .clock,
+:global(.motion-ready) .section .check,
+:global(.motion-ready) .section .step {
+  transition:
+    opacity 620ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 880ms cubic-bezier(0.32, 0.72, 0, 1);
+  will-change: opacity, transform;
+}
+
+:global(.motion-ready) .section .clock {
+  transition-delay: 120ms;
+}
+
+:global(.motion-ready) .section .check {
+  transition-delay: 300ms;
+}
+
+:global(.motion-ready) .section .stepOne {
+  transition-delay: 240ms;
+}
+
+:global(.motion-ready) .section .stepTwo {
+  transition-delay: 350ms;
+}
+
+:global(.motion-ready) .section .stepThree {
+  transition-delay: 460ms;
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .clock {
+  opacity: 1;
+  transform: rotate(-2deg);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .check {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .stepOne {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .stepTwo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+:global(.motion-ready) .section:global(.section-in-view) .stepThree {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.motion-ready) .section .copy,
+  :global(.motion-ready) .section .visual,
+  :global(.motion-ready) .section .motionLines,
+  :global(.motion-ready) .section .platform,
+  :global(.motion-ready) .section .stepTrack,
+  :global(.motion-ready) .section .clock,
+  :global(.motion-ready) .section .check,
+  :global(.motion-ready) .section .step {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -171,6 +171,55 @@ section[id] {
   scroll-margin-top: calc(var(--header-height) + 18px);
 }
 
+.motion-ready .scroll-section {
+  --section-reveal-y: 34px;
+  opacity: 0;
+  transform: translate3d(0, 38px, 0);
+  transition:
+    opacity 780ms var(--ease),
+    transform 980ms var(--ease);
+  will-change: opacity, transform;
+}
+
+.motion-ready .scroll-section.section-in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.motion-ready .reveal-on-scroll {
+  opacity: 0;
+  transform: translate3d(0, var(--section-reveal-y, 28px), 0);
+  transition:
+    opacity 760ms var(--ease) var(--reveal-delay, 0ms),
+    transform 920ms var(--ease) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.motion-ready .reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+
+  .motion-ready .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .hero {
   position: relative;
   min-height: max(100dvh, 860px);
