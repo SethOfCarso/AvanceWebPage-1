@@ -530,3 +530,165 @@
     letter-spacing: 0;
   }
 }
+
+@media (max-width: 1279px) {
+  .inner {
+    grid-template-columns: minmax(380px, 0.9fr) minmax(420px, 1.1fr);
+    align-items: center;
+    gap: clamp(24px, 3.5vw, 48px);
+  }
+
+  .copy {
+    max-width: 600px;
+  }
+
+  .title {
+    max-width: 12ch;
+    font-size: clamp(42px, 4.7vw, 58px);
+    line-height: 1.02;
+  }
+
+  .lead {
+    max-width: 40ch;
+    font-size: clamp(19px, 1.7vw, 23px);
+  }
+
+  .metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 620px;
+  }
+
+  .metric {
+    min-height: 150px;
+    padding: 22px 14px 18px;
+  }
+
+  .metric strong {
+    font-size: clamp(22px, 2.4vw, 28px);
+  }
+
+  .metric span {
+    max-width: 12ch;
+    font-size: 16px;
+  }
+
+  .values {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 620px;
+  }
+
+  .value {
+    gap: 8px;
+    min-height: 54px;
+    padding: 0 12px;
+    font-size: 15px;
+  }
+
+  .visual {
+    width: 100%;
+    min-height: 540px;
+    margin: 0;
+  }
+
+  .report {
+    left: 4%;
+    width: min(26vw, 320px);
+  }
+
+  .risk {
+    right: 6%;
+    width: min(21vw, 260px);
+  }
+
+  .confidence {
+    right: 4%;
+    width: min(26vw, 320px);
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics,
+  .values {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 100%;
+  }
+
+  .metric {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height: 142px;
+    text-align: center;
+  }
+
+  .metricIcon {
+    margin-bottom: 8px;
+  }
+
+  .visual {
+    width: min(100%, 720px);
+    min-height: 480px;
+    margin: 10px auto 0;
+  }
+
+  .report {
+    left: 2%;
+    width: min(40vw, 290px);
+  }
+
+  .risk {
+    right: 2%;
+    width: min(34vw, 250px);
+  }
+
+  .confidence {
+    right: 3%;
+    width: min(42vw, 300px);
+  }
+}
+
+@media (max-width: 560px) {
+  .metrics,
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  .metric {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: none;
+    min-height: 118px;
+    text-align: center;
+  }
+
+  .metric span {
+    max-width: 22ch;
+  }
+
+  .value {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .visual {
+    min-height: 400px;
+  }
+
+  .report {
+    left: 0;
+    width: 54vw;
+  }
+
+  .risk {
+    right: -2%;
+    width: 44vw;
+  }
+
+  .confidence {
+    right: 0;
+    width: 56vw;
+  }
+}

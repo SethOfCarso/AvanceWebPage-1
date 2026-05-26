@@ -955,3 +955,406 @@ section[id] {
     white-space: normal;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero {
+    min-height: max(100dvh, 760px);
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(430px, 0.88fr) minmax(460px, 1.12fr);
+    align-items: center;
+    gap: clamp(16px, 2.6vw, 34px);
+    min-height: calc(max(100dvh, 760px) - var(--header-height));
+    padding-top: clamp(52px, 5vw, 78px);
+  }
+
+  .hero-copy {
+    max-width: 560px;
+  }
+
+  .hero h1 {
+    max-width: 9.8ch;
+    font-size: clamp(54px, 5.8vw, 76px);
+    line-height: 0.92;
+  }
+
+  .hero-intro {
+    max-width: 38ch;
+    font-size: clamp(18px, 1.6vw, 21px);
+  }
+
+  .hero-actions {
+    margin-top: 34px;
+  }
+
+  .proof-row {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .proof-card {
+    min-height: 68px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 560px;
+    margin: 0;
+  }
+
+  .asset-mexico {
+    top: 4%;
+    left: 0;
+    width: min(54vw, 590px);
+  }
+
+  .asset-profile {
+    top: 10%;
+    right: 4%;
+    width: min(26vw, 300px);
+  }
+
+  .asset-report {
+    right: 45%;
+    bottom: 17%;
+    width: min(17vw, 205px);
+  }
+
+  .asset-document {
+    right: 27%;
+    bottom: 16%;
+    width: min(17vw, 205px);
+  }
+
+  .asset-shield {
+    right: -1%;
+    bottom: 12%;
+    width: min(21vw, 245px);
+  }
+
+  .document-base {
+    right: -3%;
+    bottom: 6%;
+    width: min(54vw, 640px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-visual {
+    width: min(100%, 620px);
+    overflow: visible;
+  }
+
+  .asset-mexico {
+    left: 0;
+    width: min(88vw, 560px);
+  }
+
+  .asset-profile {
+    right: 3%;
+    width: min(42vw, 230px);
+  }
+
+  .asset-report {
+    right: 48%;
+    width: min(30vw, 160px);
+  }
+
+  .asset-document {
+    right: 26%;
+    width: min(30vw, 160px);
+  }
+
+  .asset-shield {
+    right: 0;
+    width: min(34vw, 190px);
+  }
+
+  .document-base {
+    right: 0;
+    width: min(92vw, 590px);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    min-height: 330px;
+  }
+
+  .asset-mexico {
+    left: -8%;
+    width: 92vw;
+  }
+
+  .asset-profile {
+    top: 14%;
+    right: 0;
+    width: min(48vw, 205px);
+  }
+
+  .asset-report {
+    right: 48%;
+    width: min(35vw, 145px);
+  }
+
+  .asset-document {
+    right: 25%;
+    width: min(35vw, 145px);
+  }
+
+  .asset-shield {
+    right: -4%;
+    width: min(38vw, 170px);
+  }
+
+  .document-base {
+    right: -8%;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1279px) {
+  .proof-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: min(100%, 650px);
+  }
+
+  .proof-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    min-height: 108px;
+    padding: 18px 14px;
+    text-align: center;
+  }
+
+  .proof-card svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .proof-card span {
+    max-width: 14ch;
+    font-size: 14px;
+    line-height: 1.18;
+  }
+}
+
+@media (max-width: 768px) {
+  .proof-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 100%;
+  }
+
+  .proof-card {
+    min-height: 116px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .proof-row {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-card {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: none;
+    min-height: 96px;
+  }
+
+  .proof-card span {
+    max-width: 24ch;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1279px) and (max-height: 760px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(330px, 0.76fr) minmax(430px, 1.24fr);
+    gap: 18px;
+    min-height: calc(720px - var(--header-height));
+    padding: 112px clamp(34px, 5vw, 56px) 26px;
+  }
+
+  .hero-copy {
+    max-width: 430px;
+  }
+
+  .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    max-width: 9ch;
+    font-size: clamp(44px, 5vw, 58px);
+    line-height: 0.94;
+  }
+
+  .hero-intro {
+    max-width: 31ch;
+    margin-top: 22px;
+    font-size: 17px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .quote-button,
+  .whatsapp-button {
+    min-height: 58px;
+    font-size: 14px;
+  }
+
+  .quote-button {
+    min-width: 224px;
+  }
+
+  .whatsapp-button {
+    min-width: 156px;
+  }
+
+  .proof-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    max-width: 430px;
+    margin-top: 24px;
+  }
+
+  .proof-card {
+    min-height: 92px;
+    padding: 12px 8px;
+  }
+
+  .proof-card svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .proof-card span {
+    font-size: 12px;
+  }
+
+  .hero-visual {
+    min-height: 440px;
+  }
+
+  .asset-mexico {
+    top: 2%;
+    left: -4%;
+    width: min(52vw, 520px);
+  }
+
+  .asset-profile {
+    top: 5%;
+    right: 3%;
+    width: min(24vw, 250px);
+  }
+
+  .asset-report {
+    right: 45%;
+    bottom: 15%;
+    width: min(15vw, 165px);
+  }
+
+  .asset-document {
+    right: 28%;
+    bottom: 14%;
+    width: min(15vw, 165px);
+  }
+
+  .asset-shield {
+    right: 0;
+    bottom: 10%;
+    width: min(19vw, 200px);
+  }
+
+  .document-base {
+    right: -2%;
+    bottom: 2%;
+    width: min(50vw, 530px);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) and (max-height: 760px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(420px, 0.82fr) minmax(520px, 1.18fr);
+    gap: 24px;
+    min-height: calc(720px - var(--header-height));
+    padding: 112px clamp(48px, 5vw, 70px) 28px;
+  }
+
+  .hero-copy {
+    max-width: 500px;
+  }
+
+  .hero h1 {
+    max-width: 8.8ch;
+    font-size: clamp(62px, 5.2vw, 72px);
+    line-height: 0.92;
+  }
+
+  .hero-intro {
+    max-width: 36ch;
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .hero-actions {
+    margin-top: 30px;
+  }
+
+  .proof-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    max-width: 500px;
+    margin-top: 26px;
+  }
+
+  .proof-card {
+    min-height: 96px;
+    padding: 14px 10px;
+  }
+
+  .proof-card span {
+    font-size: 13px;
+  }
+
+  .hero-visual {
+    min-height: 460px;
+  }
+
+  .asset-mexico {
+    left: 0;
+    width: min(50vw, 590px);
+  }
+
+  .asset-profile {
+    top: 7%;
+    right: 4%;
+    width: min(22vw, 280px);
+  }
+
+  .asset-report,
+  .asset-document {
+    width: min(14vw, 180px);
+  }
+
+  .asset-shield {
+    width: min(18vw, 230px);
+  }
+}

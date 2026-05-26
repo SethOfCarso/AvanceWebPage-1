@@ -558,3 +558,106 @@
     letter-spacing: 0;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .inner {
+    grid-template-columns: minmax(390px, 0.86fr) minmax(500px, 1.14fr);
+    align-items: center;
+    gap: clamp(22px, 3vw, 44px);
+  }
+
+  .copy {
+    max-width: 520px;
+  }
+
+  .title {
+    font-size: clamp(54px, 5.2vw, 72px);
+  }
+
+  .lead {
+    max-width: 42ch;
+    font-size: clamp(19px, 1.7vw, 23px);
+  }
+
+  .visual {
+    width: 100%;
+    min-height: 500px;
+    margin: 0;
+  }
+
+  .whatsapp,
+  .email {
+    left: 0;
+    width: min(48vw, 560px);
+  }
+
+  .info {
+    right: -1%;
+    width: min(52vw, 620px);
+  }
+
+  .shield {
+    right: -2%;
+    width: min(36vw, 430px);
+  }
+}
+
+@media (max-width: 768px) {
+  .visual {
+    display: grid;
+    gap: 14px;
+    width: 100%;
+    min-height: auto;
+    margin-top: 24px;
+    overflow: visible;
+  }
+
+  .shield {
+    top: -20px;
+    right: -18px;
+    width: min(54vw, 230px);
+    opacity: 0.18;
+  }
+
+  .whatsapp,
+  .email,
+  .info {
+    position: relative;
+    inset: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    justify-self: center;
+    width: min(100%, 430px);
+    max-width: calc(100vw - 44px);
+    transform: none;
+  }
+
+  .info {
+    width: min(100%, 450px);
+  }
+
+  .visual:hover .whatsapp,
+  .visual:hover .email,
+  .visual:hover .info {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 480px) {
+  .visual {
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .whatsapp,
+  .email,
+  .info {
+    max-width: calc(100vw - 36px);
+  }
+
+  .shield {
+    right: -28px;
+    width: 62vw;
+  }
+}
