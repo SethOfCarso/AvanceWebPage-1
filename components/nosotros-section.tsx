@@ -7,32 +7,32 @@ const metrics = [
   {
     value: "18 años",
     label: "de experiencia",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.webp",
+    icon: "/images/avance/iconos/Icono_escudo_defensor.svg",
   },
   {
     value: "72 horas",
     label: "hábiles",
-    icon: "/images/avance/iconos/Icono_tiempo.webp",
+    icon: "/images/avance/iconos/Icono_tiempo.svg",
   },
   {
     value: "Cobertura",
     label: "nacional",
-    icon: "/images/avance/iconos/Icono_lugar.webp",
+    icon: "/images/avance/iconos/Icono_lugar.svg",
   },
 ];
 
 const values = [
   {
     label: "Cercanía",
-    icon: "/images/avance/iconos/Icono_personas.webp",
+    icon: "/images/avance/iconos/Icono_personas.svg",
   },
   {
     label: "Claridad",
-    icon: "/images/avance/iconos/Icono_documento_listo.webp",
+    icon: "/images/avance/iconos/Icono_documento_listo.svg",
   },
   {
     label: "Confianza",
-    icon: "/images/avance/iconos/Icono_escudo.webp",
+    icon: "/images/avance/iconos/Icono_escudo.svg",
   },
 ];
 

@@ -662,10 +662,26 @@
   }
 }
 
-@media (max-width: 759px) {
+@media (max-width: 760px) {
+  .copy {
+    order: 1;
+  }
+
+  .trustLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   .visual {
+    order: 2;
     gap: 0;
-    margin-top: 12px;
+    margin: 0 0 50px;
   }
 
   .whatsapp,
@@ -676,11 +692,11 @@
   }
 
   .email {
-    margin-top: -28px;
+    margin-top: -px;
   }
 
   .info {
-    margin-top: -34px;
+    margin-top: -42px;
   }
 }
 

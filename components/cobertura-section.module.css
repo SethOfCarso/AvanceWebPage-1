@@ -234,17 +234,18 @@
 
 .statIcon {
   display: grid;
-  width: 58px;
-  height: 58px;
+  width: 62px;
+  height: 62px;
   place-items: center;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid rgba(92, 78, 194, 0.12);
   border-radius: 13px;
 }
 
 .statIcon img {
-  width: 37px;
-  height: 37px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -391,13 +392,13 @@
   }
 
   .statIcon {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
   }
 
   .statIcon img {
-    width: 32px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -568,6 +569,39 @@
   backdrop-filter: none;
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .title {
+    max-width: none;
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+
+  .miniBenefit {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    min-height: 104px;
+    padding: 14px 12px;
+    text-align: center;
+  }
+
+  .miniBenefit span:last-child {
+    max-width: 100%;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+
+  .stat strong {
+    font-size: clamp(24px, 2vw, 34px);
+  }
+
+  .stat span {
+    font-size: 13px;
+  }
+}
+
 .stat,
 .stat:first-child,
 .stat:last-child {
@@ -678,8 +712,8 @@
 
   .miniIcon,
   .statIcon {
-    width: 54px;
-    height: 54px;
+    width: 72px;
+    height: 72px;
   }
 
   .visual {
@@ -763,5 +797,10 @@
   .hoursCard {
     right: 1%;
     width: 34vw;
+  }
+
+  .statIcon {
+    width: 58px;
+    height: 58px;
   }
 }

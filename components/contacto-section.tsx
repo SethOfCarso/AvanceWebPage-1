@@ -32,7 +32,7 @@ export function ContactoSection() {
           <div className={styles.trustLine}>
             <span className={styles.trustIcon} aria-hidden="true">
               <Image
-                src="/images/avance/iconos/Icono_escudo.webp"
+                src="/images/avance/iconos/Icono_escudo.svg"
                 alt=""
                 width={1254}
                 height={1254}

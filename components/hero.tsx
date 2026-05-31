@@ -95,7 +95,7 @@ export function Hero() {
             <span>antes de contratar</span>
           </h1>
           <p className="hero-intro">
-            Cobertura nacional, atencion profesional y respuesta en 72 horas
+            Cobertura nacional, atención profesional y respuesta en 72 horas
             habiles.
           </p>
 

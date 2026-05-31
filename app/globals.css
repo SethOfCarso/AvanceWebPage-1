@@ -372,6 +372,16 @@ section[id] {
   color: var(--violet);
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .hero h1 span {
+    max-width: none;
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+
+}
+
 .hero-intro {
   max-width: 555px;
   margin: 30px 0 0;
@@ -485,6 +495,25 @@ section[id] {
   font-size: 15px;
   font-weight: 560;
   line-height: 1.2;
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .proof-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    min-height: 108px;
+    padding: 16px 14px;
+    text-align: center;
+  }
+
+  .proof-card span {
+    max-width: 100%;
+    overflow-wrap: normal;
+    hyphens: manual;
+    text-wrap: balance;
+  }
 }
 
 .hero-visual {
