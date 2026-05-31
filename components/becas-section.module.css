@@ -424,6 +424,19 @@
   color: #4d3cb5;
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .title {
+    max-width: none;
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+  
+  .title span {
+    white-space: nowrap;
+  }
+}
+
 .lead {
   color: #30365f;
 }
