@@ -8,7 +8,7 @@ const becasBase = "/images/avance/Becas";
 const benefits = [
   {
     label: "Proceso ordenado",
-    icon: "/images/avance/iconos/Icono_documento_listo.webp",
+    icon: "/images/avance/iconos/Icono_documento_investigado.webp",
   },
   {
     label: "Información clara",

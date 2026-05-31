@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import {
   ArrowRight,
   ClipboardCheck,
+  Menu,
   MapPin,
   MessageCircle,
   ShieldCheck,
+  X,
 } from "lucide-react";
 
 const navItems = [
@@ -20,8 +25,14 @@ const proofItems = [
 ];
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const MenuIcon = isMenuOpen ? X : Menu;
+
   return (
-    <header className="site-header" aria-label="Navegacion principal">
+    <header
+      className={`site-header${isMenuOpen ? " is-menu-open" : ""}`}
+      aria-label="Navegacion principal"
+    >
       <a className="brand" href="#" aria-label="Avance Soluciones">
         <Image
           src="/images/avance/logo-de-avance.webp"
@@ -32,9 +43,28 @@ export function Header() {
         />
       </a>
 
-      <nav className="main-nav" aria-label="Menu principal">
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}
+        aria-expanded={isMenuOpen}
+        aria-controls="main-navigation"
+        onClick={() => setIsMenuOpen((open) => !open)}
+      >
+        <MenuIcon size={22} strokeWidth={1.9} aria-hidden="true" />
+      </button>
+
+      <nav
+        className="main-nav"
+        id="main-navigation"
+        aria-label="Menu principal"
+      >
         {navItems.map((item) => (
-          <a key={item.label} href={item.href}>
+          <a
+            key={item.label}
+            href={item.href}
+            onClick={() => setIsMenuOpen(false)}
+          >
             <span>{item.label}</span>
           </a>
         ))}
