@@ -374,31 +374,12 @@ section[id] {
 
 @media (min-width: 1280px) and (max-width: 1919px) {
   .hero h1 span {
-    /* width: max-content; */
     max-width: none;
     overflow: visible;
     overflow-wrap: normal;
     word-break: keep-all;
-    /* text-wrap: nowrap; */
-    /* white-space: nowrap; */
   }
 
-  .proof-card {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-content: center;
-    gap: 10px;
-    min-height: 108px;
-    padding: 16px 14px;
-    text-align: center;
-  }
-
-  .proof-card span {
-    max-width: 100%;
-    overflow-wrap: normal;
-    hyphens: manual;
-    text-wrap: balance;
-  }
 }
 
 .hero-intro {
@@ -514,6 +495,25 @@ section[id] {
   font-size: 15px;
   font-weight: 560;
   line-height: 1.2;
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .proof-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    min-height: 108px;
+    padding: 16px 14px;
+    text-align: center;
+  }
+
+  .proof-card span {
+    max-width: 100%;
+    overflow-wrap: normal;
+    hyphens: manual;
+    text-wrap: balance;
+  }
 }
 
 .hero-visual {
