@@ -3,6 +3,7 @@
 import { KeyboardEvent, ReactNode, useMemo, useState } from "react";
 import Image from "next/image";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
+import { publicPath } from "@/lib/public-path";
 import styles from "./investigacion-y-verificacion.module.css";
 
 type SlideId = "buro" | "demandas" | "comercial";
@@ -25,7 +26,7 @@ const slides: Array<{
     ),
     description:
       "Información útil y documentada para complementar su proceso de evaluación.",
-    icon: "/images/avance/iconos/Icono_escudo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_escudo.svg"),
     chips: ["Confidencial", "Reporte claro", "Decision informada"],
   },
   {
@@ -38,7 +39,7 @@ const slides: Array<{
     ),
     description:
       "Civil, mercantil, familiar, hipotecario y laboral. Información documentada para tomar decisiones con mayor seguridad.",
-    icon: "/images/avance/iconos/Icono_documento_investigado.svg",
+    icon: publicPath("/images/avance/iconos/Icono_documento_investigado.svg"),
     chips: ["Información verificable", "Análisis claro", "Apoyo para RH"],
   },
   {
@@ -51,7 +52,7 @@ const slides: Array<{
     ),
     description:
       "Valide información clave de negocios y operaciones con un enfoque claro, profesional y confiable.",
-    icon: "/images/avance/iconos/icono_oficina.svg",
+    icon: publicPath("/images/avance/iconos/icono_oficina.svg"),
     chips: ["Información comprobable", "Proceso ágil", "Mayor confianza"],
   },
 ];
@@ -59,19 +60,19 @@ const slides: Array<{
 const proofItems = [
   {
     text: "Manejamos su información con los más altos estándares de seguridad y confidencialidad.",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.svg",
+    icon: publicPath("/images/avance/iconos/Icono_escudo_defensor.svg"),
   },
   {
     text: "Reportes claros, estructurados y fáciles de interpretar.",
-    icon: "/images/avance/iconos/Icono_documento_listo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_documento_listo.svg"),
   },
   {
     text: "Apoyo profesional para tomar decisiones con mayor certeza.",
-    icon: "/images/avance/iconos/Icono_personas.svg",
+    icon: publicPath("/images/avance/iconos/Icono_personas.svg"),
   },
   {
     text: "Entregas rápidas en 72 horas hábiles.",
-    icon: "/images/avance/iconos/Icono_tiempo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_tiempo.svg"),
   },
 ];
 
@@ -158,7 +159,7 @@ export function InvestigacionYVerificacion() {
                       <span className={styles.chip} key={chip}>
                         <span className={styles.chipIcon} aria-hidden="true">
                           <Image
-                            src="/images/avance/iconos/Icono_escudo.svg"
+                            src={publicPath("/images/avance/iconos/Icono_escudo.svg")}
                             alt=""
                             width={1254}
                             height={1254}
@@ -224,7 +225,7 @@ function SlideVisual({ id }: { id: SlideId }) {
       <div className={styles.visual} aria-hidden="true">
         <Image
           className={`${styles.mainAsset} ${styles.demandFolder}`}
-          src="/images/avance/InvDemandas/Inv_Demandas_-_folder.webp"
+          src={publicPath("/images/avance/InvDemandas/Inv_Demandas_-_folder.webp")}
           alt=""
           width={1122}
           height={1402}
@@ -232,7 +233,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.demandTable}`}
-          src="/images/avance/InvDemandas/Inv_Demandas_-_tabla.webp"
+          src={publicPath("/images/avance/InvDemandas/Inv_Demandas_-_tabla.webp")}
           alt=""
           width={1122}
           height={1402}
@@ -247,7 +248,7 @@ function SlideVisual({ id }: { id: SlideId }) {
       <div className={styles.visual} aria-hidden="true">
         <Image
           className={`${styles.mainAsset} ${styles.buroFolder}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_Folder.webp"
+          src={publicPath("/images/avance/BuroDeCredito/Buro_de_credito_-_Folder.webp")}
           alt=""
           width={1122}
           height={1402}
@@ -255,7 +256,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroSummary}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_resumen_credito.webp"
+          src={publicPath("/images/avance/BuroDeCredito/Buro_de_credito_-_resumen_credito.webp")}
           alt=""
           width={1254}
           height={1254}
@@ -263,7 +264,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroRisk}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_rango.webp"
+          src={publicPath("/images/avance/BuroDeCredito/Buro_de_credito_-_rango.webp")}
           alt=""
           width={1254}
           height={1254}
@@ -271,7 +272,7 @@ function SlideVisual({ id }: { id: SlideId }) {
         />
         <Image
           className={`${styles.sideAsset} ${styles.buroSigns}`}
-          src="/images/avance/BuroDeCredito/Buro_de_credito_-_relevant_signs.webp"
+          src={publicPath("/images/avance/BuroDeCredito/Buro_de_credito_-_relevant_signs.webp")}
           alt=""
           width={1254}
           height={1254}

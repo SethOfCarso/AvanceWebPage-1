@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   X,
 } from "lucide-react";
+import { publicPath } from "@/lib/public-path";
 
 const navItems = [
   { label: "Soluciones", href: "#soluciones" },
@@ -35,7 +36,7 @@ export function Header() {
     >
       <a className="brand" href="#" aria-label="Avance Soluciones">
         <Image
-          src="/images/avance/logo-de-avance.webp"
+          src={publicPath("/images/avance/logo-de-avance.webp")}
           alt="Avance Soluciones"
           width={170}
           height={90}
@@ -123,7 +124,7 @@ export function Hero() {
         <div className="hero-visual" aria-label="Reporte de verificacion">
           <Image
             className="asset asset-mexico"
-            src="/images/avance/riesgos/mexico.webp"
+            src={publicPath("/images/avance/riesgos/mexico.webp")}
             alt=""
             width={1448}
             height={1086}
@@ -136,7 +137,7 @@ export function Hero() {
           </div>
           <Image
             className="asset asset-profile"
-            src="/images/avance/riesgos/perfil.webp"
+            src={publicPath("/images/avance/riesgos/perfil.webp")}
             alt="Perfil verificado con identidad, domicilio, historial laboral y referencias"
             width={1122}
             height={1402}
@@ -144,7 +145,7 @@ export function Hero() {
           />
           <Image
             className="asset asset-report"
-            src="/images/avance/riesgos/reporte.webp"
+            src={publicPath("/images/avance/riesgos/reporte.webp")}
             alt="Reporte integral con riesgo bajo"
             width={1122}
             height={1402}
@@ -152,7 +153,7 @@ export function Hero() {
           />
           <Image
             className="asset asset-document"
-            src="/images/avance/riesgos/documentacion.webp"
+            src={publicPath("/images/avance/riesgos/documentacion.webp")}
             alt="Documentacion verificada"
             width={1122}
             height={1402}
@@ -160,7 +161,7 @@ export function Hero() {
           />
           <Image
             className="asset asset-shield"
-            src="/images/avance/riesgos/escudo.webp"
+            src={publicPath("/images/avance/riesgos/escudo.webp")}
             alt=""
             width={1254}
             height={1254}

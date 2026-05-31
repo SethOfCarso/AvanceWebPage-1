@@ -1,22 +1,23 @@
 "use client";
 
 import Image from "next/image";
+import { publicPath } from "@/lib/public-path";
 import styles from "./cobertura-section.module.css";
 
-const coberturaBase = "/images/avance/Cobertura";
+const coberturaBase = publicPath("/images/avance/Cobertura");
 
 const miniBenefits = [
   {
     label: "Atención profesional",
-    icon: "/images/avance/iconos/Icono_personas.svg",
+    icon: publicPath("/images/avance/iconos/Icono_personas.svg"),
   },
   {
     label: "Cobertura nacional",
-    icon: "/images/avance/iconos/Icono_lugar.svg",
+    icon: publicPath("/images/avance/iconos/Icono_lugar.svg"),
   },
   {
     label: "Respuesta ágil",
-    icon: "/images/avance/iconos/Icono_documento_listo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_documento_listo.svg"),
   },
 ];
 
@@ -24,22 +25,22 @@ const stats = [
   {
     value: "32",
     label: "Estados cubiertos",
-    icon: "/images/avance/iconos/icono_oficina.svg",
+    icon: publicPath("/images/avance/iconos/icono_oficina.svg"),
   },
   {
     value: "+2,500",
     label: "Municipios alcanzados",
-    icon: "/images/avance/iconos/Icono_lugar.svg",
+    icon: publicPath("/images/avance/iconos/Icono_lugar.svg"),
   },
   {
     value: "Equipo nacional",
     label: "Especialistas en todo el país",
-    icon: "/images/avance/iconos/Icono_muchas_personas.svg",
+    icon: publicPath("/images/avance/iconos/Icono_muchas_personas.svg"),
   },
   {
     value: "72 h",
     label: "Respuesta en tiempo récord",
-    icon: "/images/avance/iconos/Icono_tiempo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_tiempo.svg"),
   },
 ];
 
@@ -54,7 +55,7 @@ export function CoberturaSection() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>
             <Image
-              src="/images/avance/iconos/Icono_lugar.svg"
+              src={publicPath("/images/avance/iconos/Icono_lugar.svg")}
               alt=""
               width={1254}
               height={1254}

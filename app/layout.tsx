@@ -1,14 +1,17 @@
 import type { Metadata, Viewport } from "next";
+import { publicPath } from "@/lib/public-path";
 import "./globals.css";
+
+const appIcon = publicPath("/images/avance/logo-de-avance.webp");
 
 export const metadata: Metadata = {
   title: "Avance Soluciones",
   description:
     "Estudios socioeconomicos y sociolaborales con cobertura nacional.",
   icons: {
-    icon: "/images/avance/logo-de-avance.webp",
-    shortcut: "/images/avance/logo-de-avance.webp",
-    apple: "/images/avance/logo-de-avance.webp",
+    icon: appIcon,
+    shortcut: appIcon,
+    apple: appIcon,
   },
 };
 
