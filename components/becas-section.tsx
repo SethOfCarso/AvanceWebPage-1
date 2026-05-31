@@ -8,15 +8,15 @@ const becasBase = "/images/avance/Becas";
 const benefits = [
   {
     label: "Proceso ordenado",
-    icon: "/images/avance/iconos/Icono_documento_investigado.webp",
+    icon: "/images/avance/iconos/Icono_documento_investigado.svg",
   },
   {
     label: "Información clara",
-    icon: "/images/avance/iconos/Icono_documento_listo.webp",
+    icon: "/images/avance/iconos/Icono_documento_listo.svg",
   },
   {
     label: "Atención profesional",
-    icon: "/images/avance/iconos/Icono_documento_listo.webp",
+    icon: "/images/avance/iconos/Icono_escudo.svg",
   },
 ];
 
@@ -27,7 +27,7 @@ export function BecasSection() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>
             <Image
-              src="/images/avance/iconos/Icono_documento_listo.webp"
+              src="/images/avance/iconos/Icono_documento_listo.svg"
               alt=""
               width={1254}
               height={1254}

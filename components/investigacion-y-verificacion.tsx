@@ -25,7 +25,7 @@ const slides: Array<{
     ),
     description:
       "Información útil y documentada para complementar su proceso de evaluación.",
-    icon: "/images/avance/iconos/Icono_escudo.webp",
+    icon: "/images/avance/iconos/Icono_escudo.svg",
     chips: ["Confidencial", "Reporte claro", "Decision informada"],
   },
   {
@@ -38,7 +38,7 @@ const slides: Array<{
     ),
     description:
       "Civil, mercantil, familiar, hipotecario y laboral. Información documentada para tomar decisiones con mayor seguridad.",
-    icon: "/images/avance/iconos/Icono_documento_investigado.webp",
+    icon: "/images/avance/iconos/Icono_documento_investigado.svg",
     chips: ["Información verificable", "Análisis claro", "Apoyo para RH"],
   },
   {
@@ -51,7 +51,7 @@ const slides: Array<{
     ),
     description:
       "Valide información clave de negocios y operaciones con un enfoque claro, profesional y confiable.",
-    icon: "/images/avance/iconos/icono_oficina.webp",
+    icon: "/images/avance/iconos/icono_oficina.svg",
     chips: ["Información comprobable", "Proceso ágil", "Mayor confianza"],
   },
 ];
@@ -59,19 +59,19 @@ const slides: Array<{
 const proofItems = [
   {
     text: "Manejamos su información con los más altos estándares de seguridad y confidencialidad.",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.webp",
+    icon: "/images/avance/iconos/Icono_escudo_defensor.svg",
   },
   {
     text: "Reportes claros, estructurados y fáciles de interpretar.",
-    icon: "/images/avance/iconos/Icono_documento_listo.webp",
+    icon: "/images/avance/iconos/Icono_documento_listo.svg",
   },
   {
     text: "Apoyo profesional para tomar decisiones con mayor certeza.",
-    icon: "/images/avance/iconos/Icono_personas.webp",
+    icon: "/images/avance/iconos/Icono_personas.svg",
   },
   {
     text: "Entregas rápidas en 72 horas hábiles.",
-    icon: "/images/avance/iconos/Icono_tiempo.webp",
+    icon: "/images/avance/iconos/Icono_tiempo.svg",
   },
 ];
 
@@ -158,7 +158,7 @@ export function InvestigacionYVerificacion() {
                       <span className={styles.chip} key={chip}>
                         <span className={styles.chipIcon} aria-hidden="true">
                           <Image
-                            src="/images/avance/iconos/Icono_escudo.webp"
+                            src="/images/avance/iconos/Icono_escudo.svg"
                             alt=""
                             width={1254}
                             height={1254}

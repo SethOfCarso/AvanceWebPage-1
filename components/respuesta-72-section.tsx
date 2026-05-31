@@ -27,7 +27,7 @@ export function Respuesta72Section() {
           <div className={styles.verify}>
             <span className={styles.verifyIcon} aria-hidden="true">
               <Image
-                src="/images/avance/iconos/Icono_escudo.webp"
+                src="/images/avance/iconos/Icono_escudo.svg"
                 alt=""
                 width={1254}
                 height={1254}
