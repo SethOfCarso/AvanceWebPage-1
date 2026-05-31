@@ -569,6 +569,39 @@
   backdrop-filter: none;
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .title {
+    max-width: none;
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+
+  .miniBenefit {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    min-height: 104px;
+    padding: 14px 12px;
+    text-align: center;
+  }
+
+  .miniBenefit span:last-child {
+    max-width: 100%;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+
+  .stat strong {
+    font-size: clamp(24px, 2vw, 34px);
+  }
+
+  .stat span {
+    font-size: 13px;
+  }
+}
+
 .stat,
 .stat:first-child,
 .stat:last-child {
