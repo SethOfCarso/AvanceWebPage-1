@@ -8,6 +8,12 @@
     linear-gradient(112deg, #f9f9f2 0%, #fbfbff 48%, #f1eeff 100%);
 }
 
+@media (max-width: 1279px) {
+  .section {
+    display: none;
+  }
+}
+
 .section::before {
   position: absolute;
   inset: 0;
