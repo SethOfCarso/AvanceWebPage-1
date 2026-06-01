@@ -14,7 +14,6 @@ import {
 import { publicPath } from "@/lib/public-path";
 
 const navItems = [
-  { label: "Soluciones", href: "#soluciones" },
   { label: "Servicios", href: "#investigacion-y-verificacion" },
   { label: "Becas", href: "#becas" },
 ];
