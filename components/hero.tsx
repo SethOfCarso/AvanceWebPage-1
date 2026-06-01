@@ -91,8 +91,11 @@ export function Hero() {
         <div className="hero-copy">
           <h1 id="hero-title">
             Estudios
-            <span className="hero-title-main">Socioeconómicos</span>
-            <span>y Sociolaborales</span>
+            <br className="hero-title-break" />
+            <span className="hero-title-line">
+              <span className="hero-title-main">Socioeconómicos</span> y
+              Sociolaborales
+            </span>
           </h1>
           <p className="hero-service-title">
             Contrata con <span>confianza</span>
