@@ -5,8 +5,11 @@ import { useEffect } from "react";
 const revealSelectors = [
   ".hero-copy .eyebrow",
   ".hero-copy h1",
-  ".hero-copy .intro",
-  ".hero-copy .button",
+  ".hero-service-title",
+  ".hero-intro",
+  ".proof-card",
+  ".hero-actions > *",
+  ".hero-assurance",
   ".hero-visual",
   ".purpose-note",
   ".trust-copy .eyebrow",
