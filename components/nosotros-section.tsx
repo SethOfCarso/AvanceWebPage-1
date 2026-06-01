@@ -1,38 +1,39 @@
 "use client";
 
 import Image from "next/image";
+import { publicPath } from "@/lib/public-path";
 import styles from "./nosotros-section.module.css";
 
 const metrics = [
   {
     value: "18 años",
     label: "de experiencia",
-    icon: "/images/avance/iconos/Icono_escudo_defensor.svg",
+    icon: publicPath("/images/avance/iconos/Icono_escudo_defensor.svg"),
   },
   {
     value: "72 horas",
     label: "hábiles",
-    icon: "/images/avance/iconos/Icono_tiempo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_tiempo.svg"),
   },
   {
     value: "Cobertura",
     label: "nacional",
-    icon: "/images/avance/iconos/Icono_lugar.svg",
+    icon: publicPath("/images/avance/iconos/Icono_lugar.svg"),
   },
 ];
 
 const values = [
   {
     label: "Cercanía",
-    icon: "/images/avance/iconos/Icono_personas.svg",
+    icon: publicPath("/images/avance/iconos/Icono_personas.svg"),
   },
   {
     label: "Claridad",
-    icon: "/images/avance/iconos/Icono_documento_listo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_documento_listo.svg"),
   },
   {
     label: "Confianza",
-    icon: "/images/avance/iconos/Icono_escudo.svg",
+    icon: publicPath("/images/avance/iconos/Icono_escudo.svg"),
   },
 ];
 
@@ -90,7 +91,7 @@ export function NosotrosSection() {
         <div className={styles.visual} aria-hidden="true">
           <Image
             className={styles.report}
-            src="/images/avance/Nosotros/Nosotros_-_reporte.webp"
+            src={publicPath("/images/avance/Nosotros/Nosotros_-_reporte.webp")}
             alt=""
             width={971}
             height={1619}
@@ -98,7 +99,7 @@ export function NosotrosSection() {
           />
           <Image
             className={styles.risk}
-            src="/images/avance/Nosotros/Nosotros_-_semaforo.webp"
+            src={publicPath("/images/avance/Nosotros/Nosotros_-_semaforo.webp")}
             alt=""
             width={1122}
             height={1402}
@@ -106,7 +107,7 @@ export function NosotrosSection() {
           />
           <Image
             className={styles.confidence}
-            src="/images/avance/Nosotros/Nosotros_-_carta_confianza.webp"
+            src={publicPath("/images/avance/Nosotros/Nosotros_-_carta_confianza.webp")}
             alt=""
             width={1448}
             height={1086}

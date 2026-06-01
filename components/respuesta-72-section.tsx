@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { publicPath } from "@/lib/public-path";
 import styles from "./respuesta-72-section.module.css";
 
-const assetBase = "/images/avance/Respuesta72hrs";
+const assetBase = publicPath("/images/avance/Respuesta72hrs");
 
 export function Respuesta72Section() {
   return (
@@ -27,7 +28,7 @@ export function Respuesta72Section() {
           <div className={styles.verify}>
             <span className={styles.verifyIcon} aria-hidden="true">
               <Image
-                src="/images/avance/iconos/Icono_escudo.svg"
+                src={publicPath("/images/avance/iconos/Icono_escudo.svg")}
                 alt=""
                 width={1254}
                 height={1254}

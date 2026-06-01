@@ -11,11 +11,11 @@ import {
   ShieldCheck,
   X,
 } from "lucide-react";
+import { publicPath } from "@/lib/public-path";
 
 const navItems = [
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Becas", href: "#becas" },
   { label: "Servicios", href: "#investigacion-y-verificacion" },
+  { label: "Becas", href: "#becas" },
 ];
 
 const proofItems = [
@@ -31,11 +31,11 @@ export function Header() {
   return (
     <header
       className={`site-header${isMenuOpen ? " is-menu-open" : ""}`}
-      aria-label="Navegacion principal"
+      aria-label="Navegación principal"
     >
       <a className="brand" href="#" aria-label="Avance Soluciones">
         <Image
-          src="/images/avance/logo-de-avance.webp"
+          src={publicPath("/images/avance/logo-de-avance.webp")}
           alt="Avance Soluciones"
           width={170}
           height={90}
@@ -46,7 +46,7 @@ export function Header() {
       <button
         className="menu-toggle"
         type="button"
-        aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}
+        aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
         aria-expanded={isMenuOpen}
         aria-controls="main-navigation"
         onClick={() => setIsMenuOpen((open) => !open)}
@@ -57,7 +57,7 @@ export function Header() {
       <nav
         className="main-nav"
         id="main-navigation"
-        aria-label="Menu principal"
+        aria-label="Menú principal"
       >
         {navItems.map((item) => (
           <a
@@ -72,7 +72,7 @@ export function Header() {
 
       <a className="client-button" href="#contacto">
         <ArrowRight size={20} strokeWidth={1.75} aria-hidden="true" />
-        <span>Solicitar cotizacion</span>
+        <span>Solicitar cotización</span>
       </a>
     </header>
   );
@@ -89,20 +89,20 @@ export function Hero() {
 
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="eyebrow">Estudios socioeconomicos y sociolaborales</p>
+          <p className="eyebrow">Estudios socioeconómicos y sociolaborales</p>
           <h1 id="hero-title">
             Reduzca riesgos
             <span>antes de contratar</span>
           </h1>
           <p className="hero-intro">
             Cobertura nacional, atención profesional y respuesta en 72 horas
-            habiles.
+            hábiles.
           </p>
 
           <div className="hero-actions" aria-label="Acciones principales">
             <a className="quote-button" href="#contacto">
               <ArrowRight size={24} strokeWidth={1.8} aria-hidden="true" />
-              <span>Solicitar cotizacion</span>
+              <span>Solicitar cotización</span>
             </a>
             <a className="whatsapp-button" href="#contacto">
               <MessageCircle size={24} strokeWidth={1.9} aria-hidden="true" />
@@ -120,10 +120,10 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Reporte de verificacion">
+        <div className="hero-visual" aria-label="Reporte de verificación">
           <Image
             className="asset asset-mexico"
-            src="/images/avance/riesgos/mexico.webp"
+            src={publicPath("/images/avance/riesgos/mexico.webp")}
             alt=""
             width={1448}
             height={1086}
@@ -136,7 +136,7 @@ export function Hero() {
           </div>
           <Image
             className="asset asset-profile"
-            src="/images/avance/riesgos/perfil.webp"
+            src={publicPath("/images/avance/riesgos/perfil.webp")}
             alt="Perfil verificado con identidad, domicilio, historial laboral y referencias"
             width={1122}
             height={1402}
@@ -144,7 +144,7 @@ export function Hero() {
           />
           <Image
             className="asset asset-report"
-            src="/images/avance/riesgos/reporte.webp"
+            src={publicPath("/images/avance/riesgos/reporte.webp")}
             alt="Reporte integral con riesgo bajo"
             width={1122}
             height={1402}
@@ -152,15 +152,15 @@ export function Hero() {
           />
           <Image
             className="asset asset-document"
-            src="/images/avance/riesgos/documentacion.webp"
-            alt="Documentacion verificada"
+            src={publicPath("/images/avance/riesgos/documentacion.webp")}
+            alt="Documentación verificada"
             width={1122}
             height={1402}
             priority
           />
           <Image
             className="asset asset-shield"
-            src="/images/avance/riesgos/escudo.webp"
+            src={publicPath("/images/avance/riesgos/escudo.webp")}
             alt=""
             width={1254}
             height={1254}
