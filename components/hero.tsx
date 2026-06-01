@@ -19,9 +19,9 @@ const navItems = [
 ];
 
 const proofItems = [
-  { icon: ShieldCheck, label: "18 años de experiencia" },
   { icon: MapPin, label: "Cobertura nacional" },
-  { icon: ClipboardCheck, label: "Reportes claros" },
+  { icon: ShieldCheck, label: "Perfil verificado" },
+  { icon: ClipboardCheck, label: "Reporte en 72h" },
 ];
 
 export function Header() {
@@ -89,15 +89,28 @@ export function Hero() {
 
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="eyebrow">Estudios socioeconómicos y sociolaborales</p>
           <h1 id="hero-title">
-            Reduzca riesgos
-            <span>antes de contratar</span>
+            Estudios
+            <span className="hero-title-main">Socioeconómicos</span>
+            <span>y Sociolaborales</span>
           </h1>
+          <p className="hero-service-title">
+            Contrata con <span>confianza</span>
+          </p>
           <p className="hero-intro">
-            Cobertura nacional, atención profesional y respuesta en 72 horas
+            Te ayudamos a validar información clave de tus candidatos con
+            reportes profesionales, cobertura nacional y respuesta en 72 horas
             hábiles.
           </p>
+
+          <div className="proof-row" aria-label="Beneficios">
+            {proofItems.map(({ icon: Icon, label }) => (
+              <article className="proof-card" key={label}>
+                <Icon size={35} strokeWidth={1.7} aria-hidden="true" />
+                <span>{label}</span>
+              </article>
+            ))}
+          </div>
 
           <div className="hero-actions" aria-label="Acciones principales">
             <a className="quote-button" href="#contacto">
@@ -110,61 +123,52 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="proof-row" aria-label="Beneficios">
-            {proofItems.map(({ icon: Icon, label }) => (
-              <article className="proof-card" key={label}>
-                <Icon size={35} strokeWidth={1.7} aria-hidden="true" />
-                <span>{label}</span>
-              </article>
-            ))}
-          </div>
+          <p className="hero-assurance">
+            <ShieldCheck size={18} strokeWidth={1.8} aria-hidden="true" />
+            <span>Seguridad, confidencialidad y cumplimiento garantizados.</span>
+          </p>
         </div>
 
         <div className="hero-visual" aria-label="Reporte de verificación">
-          <Image
+          <img
             className="asset asset-mexico"
-            src={publicPath("/images/avance/riesgos/mexico.webp")}
+            src={publicPath("/images/avance/Reduzca_riesgos/Reduzca_riesgos_-_Mexico.webp")}
             alt=""
             width={1448}
             height={1086}
-            priority
           />
           <div className="document-base" aria-hidden="true">
             <span />
             <span />
             <span />
           </div>
-          <Image
+          <img
             className="asset asset-profile"
-            src={publicPath("/images/avance/riesgos/perfil.webp")}
+            src={publicPath("/images/avance/Reduzca_riesgos/Reduzca_riesgos_-_perfil.webp")}
             alt="Perfil verificado con identidad, domicilio, historial laboral y referencias"
             width={1122}
             height={1402}
-            priority
           />
-          <Image
+          <img
             className="asset asset-report"
-            src={publicPath("/images/avance/riesgos/reporte.webp")}
+            src={publicPath("/images/avance/Reduzca_riesgos/Reduzca_riesgos_-_reporte.webp")}
             alt="Reporte integral con riesgo bajo"
             width={1122}
             height={1402}
-            priority
           />
-          <Image
+          <img
             className="asset asset-document"
-            src={publicPath("/images/avance/riesgos/documentacion.webp")}
+            src={publicPath("/images/avance/Reduzca_riesgos/Reduzca_riesgos_-_documentacion.webp")}
             alt="Documentación verificada"
             width={1122}
             height={1402}
-            priority
           />
-          <Image
+          <img
             className="asset asset-shield"
-            src={publicPath("/images/avance/riesgos/escudo.webp")}
+            src={publicPath("/images/avance/Reduzca_riesgos/Reduzca_riesgos_-_escudo.webp")}
             alt=""
             width={1254}
             height={1254}
-            priority
           />
         </div>
       </div>
