@@ -9,9 +9,9 @@ export function LazyPageSections() {
   return (
     <>
       <Respuesta72Section />
-      <BecasSection />
       <CoberturaSection />
       <InvestigacionYVerificacion />
+      <BecasSection />
       <NosotrosSection />
       <ContactoSection />
     </>
