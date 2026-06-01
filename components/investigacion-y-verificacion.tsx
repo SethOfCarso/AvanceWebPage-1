@@ -103,7 +103,7 @@ export function InvestigacionYVerificacion() {
       tabIndex={0}
     >
       <div className={styles.header}>
-        <span className={styles.servicePill}>Servicio especializado</span>
+        <span className={styles.servicePill}>Servicios especiales</span>
       </div>
 
       <div className={styles.carouselShell}>
