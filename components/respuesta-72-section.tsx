@@ -18,7 +18,11 @@ export function Respuesta72Section() {
 
           <p className={styles.kicker}>Tiempo de respuesta</p>
           <h2 className={styles.title} id="respuesta-72-title">
-            Respuesta en <strong>72</strong> <span>horas hábiles.</span>
+            Respuesta en <strong>72</strong>
+            <span className={styles.titleTail}> horas hábiles,</span>
+            <span className={styles.titlePresence}>
+              con verificación presencial
+            </span>
           </h2>
           <span className={styles.orangeRule} aria-hidden="true" />
           <p className={styles.lead}>
@@ -35,7 +39,7 @@ export function Respuesta72Section() {
                 loading="lazy"
               />
             </span>
-            <span>Información verificable</span>
+            <span>Verificación presencial y documentada</span>
           </div>
         </div>
 
