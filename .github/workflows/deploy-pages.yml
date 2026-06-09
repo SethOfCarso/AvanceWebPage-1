@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - MVP
-      - main
-      - master
   workflow_dispatch:
 
 permissions:
@@ -43,6 +41,9 @@ jobs:
           GITHUB_PAGES: "true"
           NEXT_PUBLIC_BASE_PATH: "/AvanceWebPage-1"
           NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Disable Jekyll processing
+        run: touch out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
