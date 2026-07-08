@@ -15,7 +15,10 @@ import { publicPath } from "@/lib/public-path";
 
 const navItems = [
   { label: "Servicios", href: "#investigacion-y-verificacion" },
-  { label: "Becas", href: "#becas" },
+  {
+    label: "Becas",
+    href: "https://www.avancesoluciones.com.mx/becas2020/form_solicitud_sin/form_solicitud_sin.php",
+  },
 ];
 
 const proofItems = [
