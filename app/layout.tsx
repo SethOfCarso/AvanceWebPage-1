@@ -5,6 +5,7 @@ import "./globals.css";
 const appIcon = publicPath("/images/avance/logo-de-avance.webp");
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://avancesoluciones.com.mx";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const webPath = `${basePath}/web`;
 const siteName = "AVS Avance Soluciones";
 const title =
   "Estudios socioeconómicos y sociolaborales en México | AVS Avance Soluciones";
@@ -29,12 +30,12 @@ export const metadata: Metadata = {
     "estudios socioeconómicos México",
   ],
   alternates: {
-    canonical: `${basePath}/`,
+    canonical: webPath,
   },
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: `${basePath}/`,
+    url: webPath,
     siteName,
     title,
     description,
